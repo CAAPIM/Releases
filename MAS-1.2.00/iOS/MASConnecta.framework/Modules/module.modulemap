@@ -1,6 +1,0 @@
-framework module MASConnecta {
-  umbrella header "MASConnecta.h"
-
-  export *
-  module * { export * }
-}

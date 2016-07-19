@@ -1,6 +1,0 @@
-framework module MASUI {
-  umbrella header "MASUI.h"
-
-  export *
-  module * { export * }
-}
