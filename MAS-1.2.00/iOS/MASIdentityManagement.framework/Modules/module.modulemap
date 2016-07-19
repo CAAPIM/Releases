@@ -1,0 +1,6 @@
+framework module MASIdentityManagement {
+  umbrella header "MASIdentityManagement.h"
+
+  export *
+  module * { export * }
+}

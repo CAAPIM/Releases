@@ -1,0 +1,6 @@
+framework module MASStorage {
+  umbrella header "MASStorage.h"
+
+  export *
+  module * { export * }
+}
