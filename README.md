@@ -1,2 +1,2 @@
 # MobileSDK-Release-Package
-This is the location to get the latest released binaries for the Mobile SDK Release Package
+This is the location to get the latest released packages for CA APIM
