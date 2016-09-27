@@ -5,6 +5,7 @@ Back to > [iOS Mobile SDK](https://github.com/CAAPIM/iOS-MAS-SDK)
 
 ## Overview
 Mobile SDK Release Package is the released binaries for our SDK.
+
 For more info please visit [CA Mobile App Services][mas.ca.com]. 
 
 ## License
