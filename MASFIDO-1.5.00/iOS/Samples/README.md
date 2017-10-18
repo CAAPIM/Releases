@@ -24,6 +24,3 @@ The MASFIDOSample app present in this repository cannot be run in the present st
 > Note: Make sure that the Facet id of this MASFIDOSample iOS App is added to the Samsung SDS Nexsign server's list of facet ids.
 > To know more about Samsung SDS FIDO FacetId, please read Samsung SDS Nexsign Server Installation document.
 
-
- [MAS](https://github.com/CAAPIM/Releases/blob/master/MAS-1.5.00/iOS/iOS-MobileSDK-1.5.00.zip)
- [MASFIDO](https://github.com/CAAPIM/Releases/blob/master/MASFIDO-1.5.00/iOS/iOS-MASFIDOSDK-1.5.00.zip)
