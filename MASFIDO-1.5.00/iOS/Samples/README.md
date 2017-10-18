@@ -7,8 +7,10 @@ The MASFIDOSample app present in this repository cannot be run in the present st
 
 ### Prerequisites
 
+#### SDK LIBRARY FILES
+
 1. Contact the Samsung SDS team to get the 1.5.2 version of Samsung SDS SDK dynamic frameworks.
-2. Download the [MAS](https://github.com/CAAPIM/Releases/blob/develop/MAS-1.5.00/iOS/iOS-MobileSDK-1.5.00.zip) and [MASFIDO](https://github.com/CAAPIM/Releases/tree/FIDO_space/MASFIDO-1.5.00) SDK library files 
+2. Download the [MAS](https://github.com/CAAPIM/Releases/blob/develop/MAS-1.5.00/iOS/iOS-MobileSDK-1.5.00.zip) and [MASFIDO](https://github.com/CAAPIM/Releases/blob/FIDO_space/MASFIDO-1.5.00/iOS/iOS-MASFIDOSDK-1.5.00.zip) SDK library files 
 
 
 ### MASFIDOSample Project Setup
@@ -23,5 +25,5 @@ The MASFIDOSample app present in this repository cannot be run in the present st
 > To know more about Samsung SDS FIDO FacetId, please read Samsung SDS Nexsign Server Installation document.
 
 
- [mas-lib](https://github.com/CAAPIM/Releases/blob/master/MAS-1.5.00/iOS/iOS-MobileSDK-1.5.00.zip)
- [masfido-lib](https://github.com/CAAPIM/Releases/blob/master/MASFIDO-1.5.00/iOS/iOS-MASFIDOSDK-1.5.00.zip)
+ [MAS](https://github.com/CAAPIM/Releases/blob/master/MAS-1.5.00/iOS/iOS-MobileSDK-1.5.00.zip)
+ [MASFIDO](https://github.com/CAAPIM/Releases/blob/master/MASFIDO-1.5.00/iOS/iOS-MASFIDOSDK-1.5.00.zip)
