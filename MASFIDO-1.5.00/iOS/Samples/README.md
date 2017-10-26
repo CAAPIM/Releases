@@ -34,6 +34,6 @@ The MASFIDOSample app present in this repository cannot be run in the present st
 
 #### Fetch products: This button lists down content of an API which is protected by oauth accesstoken. If the user is not logged in then the system will prompt the Login UI to enter your credentials. This UI has support for FIDO Login (`Login With Biometric` button). Username is mandatory for FIDO login.
 
-#### Fetch products (FIDO T/C Protected API): This button showcases the use case of FIDO Transaction flow, wherein the same `List Items` API is protected using FIDO Transaction Confirmation flow. This API needs user to be logged in already, if not, system will prompt for Login.
+#### Fetch products (FIDO T/C Protected API): This button showcases the use case of FIDO Transaction flow, wherein the same `Fetch products` API is protected using FIDO Transaction Confirmation flow. This API needs user to be logged in already, if not, system will prompt for Login.
 
 > Note: The FIDO Authentication and Transaction flow require user to be registered for atleast one of the biometric modalities. If not you'll receive an error from FIDO server.
