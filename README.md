@@ -24,8 +24,8 @@ Back to > [iOS Mobile SDK](https://github.com/CAAPIM/iOS-MAS-SDK)
 
  Platform | Tested                                   | Should Work                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
-| iOS      | <li>10.3</li> <li>10.1.1</li> <li>9.3.2</li> | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
-| Android  | <li>7.1.1</li> <li>6.0.1</li> <li>5.1.5</li> <li>4.4.2</li> | 4.4.2 and above      
+| iOS      | <li>11.0</li><li>10.3</li> <li>10.1.1</li> <li>9.3.2</li> | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
+| Android  | <li>8.0</li><li>7.1.1</li> <li>6.0.1</li> <li>5.1.5</li> <li>4.4.2</li> | 4.4.2 and above      
 
 ### Mobile Integrations and Solutions
 
