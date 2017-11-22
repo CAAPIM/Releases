@@ -34,11 +34,17 @@ Back to > [iOS Mobile SDK](https://github.com/CAAPIM/iOS-MAS-SDK)
 
 ### Known Issues
 
-Waiting for Alan A and Hitesh
+| Issue | Description |
+|-------|-------------|
+|       |             |
+|       |             |
 
 ### Resolved Issues
 
-Waiting for Alan A and Hitesh
+| Issue | Description |
+|-------|-------------|
+|       |             |
+|       |             |
 
 ### Changelogs
 
