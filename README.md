@@ -3,17 +3,28 @@
 
 ## Release 1.6.00
 
-**Release Date**: 12/21/17
-**[CA Mobile API Gateway documentation](https://docops.ca.com/mag)**
+**Date**: 12/21/17<br>
+**[CA Mobile API Gateway documentation](https://docops.ca.com/mag)**</br>
 
 ### Features and Enhancements
 
 | Features and Enhancements                | Description                              | Platform     | Where? |
-| :--------------------------------------- | :--------------------------------------- | :----------- | ------ |
+| ---------------------------------------- | :--------------------------------------- | :----------- | ------ |
 | Improved app testing experience with device registration | In previous versions, the SDK displayed "device already registered" errors when you installed/uninstalled apps during testing with multiple users. The errors are legitimate for production environments because the MAG server secures devices with this simple logic: only the previously-registered user or client can perform the re-registration. But this made app testing painful. <p>In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps in Troubleshooting to remove the device from the MAG Manager.</p> | iOS, Android | n/a    |
 | Web browser authentication               | TBD                                      | Cordova      | <link> |
-| Use the Mobile SDK to invoke APIs on non-CA gateways | It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure. | Cordova      | <link>   
+| Use the Mobile SDK to invoke APIs on non-CA gateways | It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure. | Cordova      | <link> |   
             
+## Compatibility 
+
+| Mobile SDK | CA Mobile API Gateway | OAuth Toolkit | CA API Gateway Version |
+| ---------- | --------------------- | ------------- | ---------------------- |
+| 1.6        | 4.1                   | 4.2           | 9.3                    |
+| 1.4, 1.5   | 4.0                   | 4.0, 4.1.00   | 9.2                    |
+| 1.3        | 3.3                   | 3.6           | 9.2.x, 9.1.x           |
+| 1.2        | 3.2                   | 3.5, 3.5.1    | 9.1.0                  |
+
+**Note**: Using MAG 4.0 with OTK 4.1 requires a software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes)
+
 ### Platform Testing 
 
  Platform | Tested                                   | Should Work                              |
