@@ -1,5 +1,3 @@
-Back to > [iOS Mobile SDK](https://github.com/CAAPIM/iOS-MAS-SDK)
-<hr/>
 
 # Mobile SDK for CA Mobile API Gateway
 
