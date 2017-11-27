@@ -19,11 +19,11 @@
 | Mobile SDK | CA Mobile API Gateway | OAuth Toolkit | CA API Gateway  |
 |------------|-----------------------|---------------|-----------------|
 | 1.6        | 4.1                   | 4.2           | 9.3             |
-| 1.4, 1.5   | 4.0                   | 4.0, 4.1.00   | 9.2             |
+| 1.4, 1.5   | 4.0                   | 4.0, 4.1*     | 9.2             |
 | 1.3        | 3.3                   | 3.6           | 9.2.x, 9.1.x    |
 | 1.2        | 3.2                   | 3.5, 3.5.1    | 9.1.0           |
 
-**Note**: Using MAG 4.0 with OTK 4.1 requires a software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes)
+\*Using MAG 4.0 with OTK 4.1 requires a software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes)
 
 ### Platform Testing 
 
