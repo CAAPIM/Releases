@@ -62,7 +62,7 @@
 
 **[Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/develop/ChangeLog.md)**
 
-**[Cordova SDK ChangeLog](https://github.com/CAAPIM/MAS-Storage-Cordova/blob/develop/ChangeLog.md)**
+**[Cordova SDK ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/US419011-cordova-native-gaps/ChangeLog.md)**
 
 
 
