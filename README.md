@@ -39,7 +39,7 @@
 [Rapid App Security](https://docops.ca.com) - waiting on Satya<br>
 [CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)</br>
 
-### Known Issues
+### Known Issues (Waiting for Alan & Kiran regression testing)
 
 | Issue | Description |
 |-------|-------------|
