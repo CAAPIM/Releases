@@ -36,8 +36,8 @@
 
 ### Mobile Integrations and Solutions
 
-[Rapid App Security](https://docops.ca.com/ras)
-[CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)</br>
+<br>[Rapid App Security](https://docops.ca.com/ras)</br>
+<br>[CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)</br>
 
 ### Known Issues (Waiting for Alan & Kiran regression testing)
 
