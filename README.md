@@ -4,7 +4,7 @@
 ## Release 1.6.00
 
 <br>**Date**: 12/21/17</br>
-**[Developer website and tech docs](http://mas.ca.com/)**</br>
+**[Developer website and documentation](http://mas.ca.com/)**</br>
 **[CA Mobile API Gateway documentation](https://docops.ca.com/mag)**</br>
 
 ### Features and Enhancements
