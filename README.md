@@ -3,7 +3,8 @@
 
 ## Release 1.6.00
 
-**Date**: 12/21/17<br>
+<br>**Date**: 12/21/17</br>
+**[Developer website and tech docs](http://mas.ca.com/)**</br>
 **[CA Mobile API Gateway documentation](https://docops.ca.com/mag)**</br>
 
 ### Features and Enhancements
@@ -68,6 +69,4 @@ Copyright (c) 2016 CA. All rights reserved.
 This software may be modified and distributed under the terms
 of the MIT license. See the [LICENSE][license-link] file for details.
 
-
- [mas.ca.com]: http://mas.ca.com/
  [license-link]: /LICENSE
