@@ -3,19 +3,35 @@
 
 ## Release 1.6.00
 
-<br>**Date**: 12/21/17</br>
-**[Developer website and documentation](http://mas.ca.com/)**</br>
-**[CA Mobile API Gateway documentation](https://docops.ca.com/mag)**</br>
+**Date**: 12/21/17
 
 ### Features and Enhancements
 
+#### Improved app testing experience with device registration
 
-| Features and Enhancements                | Description                              | Platform     |
-| ---------------------------------------- | :--------------------------------------- | :----------- |
-| Improved app testing experience with device registration | In previous versions, the SDK displayed "device already registered" errors when you installed/uninstalled apps during testing with multiple users. The errors are legitimate for production environments because the MAG server secures devices with this simple logic: only the previously-registered user or client can perform the re-registration. But this made app testing painful. <p>In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps in Troubleshooting to remove the device from the MAG Manager.</p> | iOS, Android |
-| Web browser authentication               | The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs (Android) or Safari View Controller (iOS), giving you the flexibility to choose between a native, or browser-based login page. If you have a suite of mobile applications, browser-based login lets you dynamically change the login template of all the apps without modifying them individually. Using a browser-based login flow, the user is directed to a customized login page for user authentication. <p>**Requires**: Mobile Developer Console version 1.1.0</p> | iOS, Android |
-| Use the Mobile SDK to invoke APIs on non-CA gateways | It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure. | Cordova      |
-|                                          | **Other enhancements**:  <li>Start SDK with the msso_config.json file from a URL.</li><li>Sign claims with keys to generate a Java Web Token.</li> | Cordova      |
+In previous versions, the SDK displayed "device already registered" errors when you installed/uninstalled apps during testing with multiple users. The errors are legitimate for production environments because the MAG server secures devices with this simple logic: only the previously-registered user or client can perform the re-registration. But this made app testing painful. 
+
+In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
+
+- [iOS App Testing](mas.ca.com/docs/ios/1.6.00/guides/#app-testing)
+- [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
+- [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
+
+#### Web browser authentication
+
+The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs (Android) or Safari View Controller (iOS), giving you the flexibility to choose between a native, or browser-based login page. If you have a suite of mobile applications, browser-based login lets you dynamically change the login template of all the apps without modifying them individually. Using a browser-based login flow, the user is directed to a customized login page for user authentication. 
+<br>**Requires**: Mobile Developer Console version 1.1.0</br>
+<Link>
+            
+#### Use the Mobile SDK to invoke APIs on non-CA gateways
+
+It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.
+
+#### JSON Web Token (JWT) to validate data recipients
+
+By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth.
+<br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK)</br>
+<link>               
             
 ## Compatibility 
 
