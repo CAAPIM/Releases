@@ -23,7 +23,7 @@ The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs 
 <br>**Requires**: Mobile Developer Console version 1.1.0</br>
 <br>Cordova link</br>
             
-#### Cordova Support For: 
+#### Cordova support for: 
 
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.
@@ -34,7 +34,7 @@ By validating data recipients using JWT, you can add another layer of security b
 <br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK)</br>
 <br>Cordova link</br>     
 
--**Dynamic Client Configuration**  
+- **Dynamic Client Configuration**  
 Introduces new way of dynamically initializing SDK with enrollment URL. With this feature, an application or system administrator can generate an URL specified to a user, so that the user can initialize SDK without having an application with a built-in msso_config.json deployed with the application. Server configuration and application level implementation is required. See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0)
             
 ## Compatibility 
