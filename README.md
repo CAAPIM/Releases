@@ -21,21 +21,24 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 
 The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs (Android) or Safari View Controller (iOS), giving you the flexibility to choose between a native, or browser-based login page. If you have a suite of mobile applications, browser-based login lets you dynamically change the login template of all the apps without modifying them individually. Using a browser-based login flow, the user is directed to a customized login page for user authentication. 
 <br>**Requires**: Mobile Developer Console version 1.1.0</br>
-<br>Cordova link</br>
+
+Cordova link
             
 #### Cordova support for: 
 
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
-It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.
-<br>Cordova link</br>
+It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
+
+Cordova link
 
 - **JSON Web Token (JWT) to validate data recipients**  
 By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth.
-<br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK)</br>
-<br>Cordova link</br>     
+**Requires**: Advanced developer experience (because feature is implemented only in the SDK)  
 
-- **Dynamic Client Configuration**  
-Introduces new way of dynamically initializing SDK with enrollment URL. With this feature, an application or system administrator can generate an URL specified to a user, so that the user can initialize SDK without having an application with a built-in msso_config.json deployed with the application. Server configuration and application level implementation is required. See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0).
+Cordova link   
+
+- **Dynamic Client Configuration**   
+The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0), and the new SDK initialization method, [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk-).
             
 ## Compatibility 
 
@@ -48,19 +51,19 @@ Introduces new way of dynamically initializing SDK with enrollment URL. With thi
 
 \*Using MAG 4.0 with OTK 4.1 requires a software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes)
 
-### Platform Testing 
+## Platform Testing 
 
  Platform | Tested                                   | Should Work                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
 | iOS      | <li>11.X</li><li>10.X</li> <li>10.1.1</li> | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
 | Android  | <li>8.0</li><li>7.1.1</li> <li>6.0.1</li> <li>5.1.5</li> <li>4.4.2</li> | 4.4.2 and above      
 
-### Mobile Integrations and Solutions
+## Mobile Integrations and Solutions
 
-<br>[Rapid App Security](https://docops.ca.com/ras)</br>
-<br>[CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)</br>
+- [Rapid App Security](https://docops.ca.com/ras)
+- [CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)
 
-### Known Issues (Waiting for Alan & Kiran regression testing)
+## Known Issues (Waiting for Alan & Kiran regression testing)
 
 | Issue | Description |
 |-------|-------------|
@@ -68,7 +71,7 @@ Introduces new way of dynamically initializing SDK with enrollment URL. With thi
 |       |             |
 
 
-### Changelogs
+## Changelogs
 
 **iOS**
 - MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/develop/CHANGELOG.md)
