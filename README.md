@@ -79,6 +79,12 @@ By validating data recipients using JWT, you can add another layer of security b
 **[Cordova SDK ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/US419011-cordova-native-gaps/ChangeLog.md)**
 
 
+## More Info
+
+- [CA Support Online](https://support.ca.com/)
+- [Developer website and documentation](https://mas.ca.com)
+- [CA Mobile API Gateway documentation](https://docops.ca.com/mag)
+
 ## License
 
 Copyright (c) 2016 CA. All rights reserved.
