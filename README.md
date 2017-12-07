@@ -35,7 +35,7 @@ By validating data recipients using JWT, you can add another layer of security b
 <br>Cordova link</br>     
 
 - **Dynamic Client Configuration**  
-Introduces new way of dynamically initializing SDK with enrollment URL. With this feature, an application or system administrator can generate an URL specified to a user, so that the user can initialize SDK without having an application with a built-in msso_config.json deployed with the application. Server configuration and application level implementation is required. See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0)
+Introduces new way of dynamically initializing SDK with enrollment URL. With this feature, an application or system administrator can generate an URL specified to a user, so that the user can initialize SDK without having an application with a built-in msso_config.json deployed with the application. Server configuration and application level implementation is required. See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0).
             
 ## Compatibility 
 
