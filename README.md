@@ -15,7 +15,6 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 - [iOS App Testing](mas.ca.com/docs/ios/1.6.00/guides/#app-testing)
 - [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
-
             
 ### Cordova Mobile SDK Enhancements
 
