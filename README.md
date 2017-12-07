@@ -13,7 +13,7 @@ In previous versions, the SDK displayed "device already registered" errors when 
 
 In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
 
-- [iOS App Testing](mas.ca.com/docs/ios/1.6.00/guides/#app-testing)
+- [iOS App Testing](https://mas.ca.com/docs/ios/1.6.00/guides/#app-testing)
 - [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
 
@@ -37,8 +37,8 @@ By validating data recipients using JWT, you can add another layer of security b
 
 Cordova link   
 
-- **Dynamic Client Configuration**   
-The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see See [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0), and the new SDK initialization method, [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk-).
+- **Dynamic Client Configuration Using Enrollment URL**   
+The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see  [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0), and the new SDK initialization method, [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk-).
             
 ## Compatibility 
 
