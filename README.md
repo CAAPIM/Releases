@@ -16,13 +16,14 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 - [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
 
-### New Web browser authentication
+            
+### Cordova Mobile SDK Enhancements
+
+-**Web browser authentication**  
 The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs (Android) or Safari View Controller (iOS), giving you the flexibility to choose between a native, or browser-based login page. If you have a suite of mobile applications, browser-based login lets you dynamically change the login template of all the apps without modifying them individually. Using a browser-based login flow, the user is directed to a customized login page for user authentication. 
 <br>**Requires**: Mobile Developer Console version 1.1.0</br>
 
 Cordova link
-            
-### New Cordova support
 
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
@@ -67,7 +68,6 @@ The Cordova Mobile SDK now supports managing the msso_config.json file outside o
 |-------|-------------|
 |       |             |
 |       |             |
-
 
 ## Changelogs
 
