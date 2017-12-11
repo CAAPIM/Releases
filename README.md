@@ -27,6 +27,7 @@ Cordova link
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
 
+  - [Blog: How to Make Secure Calls to APIs from External Servers](https://www.ca.com/us/developers/mas/blog/how-to-make-secure-calls-to-apis-from-external-servers.html)
   - [iOS Send HTTP Requests to External APIs](http://mas.ca.com/docs/ios/1.6.00/guides/#send-http-requests-to-external-apis)
   - [Android Send HTTP Requests to External APIs](http://mas.ca.com/docs/android/1.6.00/guides/#send-http-requests-to-external-apis)
 
