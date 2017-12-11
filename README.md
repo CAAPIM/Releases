@@ -88,7 +88,7 @@ The Cordova Mobile SDK now supports managing the msso_config.json file outside o
 ## More Info
 
 - [CA Support Online](https://support.ca.com/)
-- [Developer website and documentation](https://mas.ca.com)
+- [Developer website and documentation](https://www.ca.com/us/developers/mas.html)
 - [CA Mobile API Gateway documentation](https://docops.ca.com/mag)
 
 ## License
