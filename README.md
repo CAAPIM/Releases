@@ -39,7 +39,7 @@ By validating data recipients using JWT, you can add another layer of security b
   - [Android Validate Data Recipients Using JWT](http://mas.ca.com/docs/android/1.6.00/guides/#jwt-data) 
 
 - **Dynamic Client Configuration Using Enrollment URL**   
-The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.0). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
+The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Client Configuration](https://docops.ca.com/display/MAG/.Dynamic+Client+Configuration+v4.1). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
 ## Compatibility 
 
