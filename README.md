@@ -32,7 +32,8 @@ It’s a reality. You don't always have the CA API Gateway fronting all your API
 
 - **JSON Web Token (JWT) to validate data recipients**  
 By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth.
-**Requires**: Advanced developer experience (because feature is implemented only in the SDK)  
+
+<br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK).</br>  
 
   - [Cordova Validate Data Recipients Using JWT](http://mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt) 
   - [Cordova Sign Requests Using JWT](http://mas.ca.com/docs/ios/1.5.00/guides/#jwt-data)
