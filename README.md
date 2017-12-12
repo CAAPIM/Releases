@@ -12,8 +12,6 @@ In previous versions, the SDK displayed "device already registered" errors when 
 
 In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
 
-- [iOS App Testing](mas.ca.com/docs/ios/1.6.00/guides/#app-testing)
-- [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
             
 ### Cordova Mobile SDK Enhancements
@@ -22,21 +20,19 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 The Mobile SDK now provides a browser-based login page using Chrome Custom Tabs (Android) or Safari View Controller (iOS), giving you the flexibility to choose between a native, or browser-based login page. If you have a suite of mobile applications, browser-based login lets you dynamically change the login template of all the apps without modifying them individually. Using a browser-based login flow, the user is directed to a customized login page for user authentication. 
 **Requires**: Mobile Developer Console version 1.1.0
 
-Cordova link
+- [Cordova link](mas.ca.com)
 
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
 
   - [Blog: How to Make Secure Calls to APIs from External Servers](https://www.ca.com/us/developers/mas/blog/how-to-make-secure-calls-to-apis-from-external-servers.html)
-  - [iOS Send HTTP Requests to External APIs](http://mas.ca.com/docs/ios/1.6.00/guides/#send-http-requests-to-external-apis)
-  - [Android Send HTTP Requests to External APIs](http://mas.ca.com/docs/android/1.6.00/guides/#send-http-requests-to-external-apis)
+  - [Cordova Send HTTP Requests to External APIs](http://mas.ca.com/docs/cordova/1.6.00/guides/#send-http-requests-to-external-apis)
 
 - **JSON Web Token (JWT) to validate data recipients**  
 By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth.
 **Requires**: Advanced developer experience (because feature is implemented only in the SDK)  
 
-  - [iOS Validate Data Recipients Using JWT](http://mas.ca.com/docs/ios/1.6.00/guides/#jwt-data)  
-  - [Android Validate Data Recipients Using JWT](http://mas.ca.com/docs/android/1.6.00/guides/#jwt-data) 
+  - [Cordova Validate Data Recipients Using JWT](http://mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt)  
 
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
