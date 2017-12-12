@@ -12,8 +12,16 @@ In previous versions, the SDK displayed "device already registered" errors when 
 
 In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
 
+- [iOS App Testing](mas.ca.com/docs/iOS/1.6.00/guides/#app-testing)
+- [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
             
+### Customize requests to access APIs
+
+Use the new iOS MASRequestBuilder method to build a custom request to access an API. Build a request programmatically using MAS.invoke and add your own parameters. 
+
+- [iOS Access APIs](mas.ca.com/docs/iOS/1.6.00/guides/#access-apis)
+
 ### Cordova Mobile SDK Enhancements
 
 - **Web browser authentication**  
