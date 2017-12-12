@@ -86,10 +86,10 @@ The following versions are supported in Mobile SDK 1.6:
 
 ## More Info
 
-- [CA Support Online](https://support.ca.com/)
 - [Developer website and documentation](https://www.ca.com/us/developers/mas.html)
 - [CA Mobile API Gateway documentation](https://docops.ca.com/mag)
 - [CA Mobile API Gateway communities](https://communities.ca.com/community/ca-api-management-community/content?filterID=contentstatus%5Bpublished%5D~category%5Bca-mobile-api-gateway%5D)
+- [CA Support Online](https://support.ca.com/)
 
 ## License
 
