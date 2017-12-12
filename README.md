@@ -41,26 +41,25 @@ The Cordova Mobile SDK now supports managing the msso_config.json file outside o
             
 ## Compatibility 
 
-| Mobile SDK | CA Mobile API Gateway | OAuth Toolkit | CA API Gateway  |
-|------------|-----------------------|---------------|-----------------|
-| 1.6        | 4.1                   | 4.2           | 9.3             |
-| 1.4, 1.5   | 4.0                   | 4.0, 4.1*     | 9.2             |
-| 1.3        | 3.3                   | 3.6           | 9.2.x, 9.1.x    |
-| 1.2        | 3.2                   | 3.5, 3.5.1    | 9.1.0           |
+The following versions are supported in Mobile SDK 1.6:
 
-\*Using MAG 4.0 with OTK 4.1 requires a software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes)
+| CA Mobile API Gateway | OAuth Toolkit |
+| --------------------- | ------------- |
+| 4.1                   | 4.2           |
+| 4.0                   | 4.1           |
+| 3.3                   | 3.6           |
+| 3.2                   | 3.5           |
+
+**Note**: Some Mobile SDK features may depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
+
 
 ## Platform Testing 
 
- Platform | Tested                                   | Should Work                              |
+ Platform | Supported                                  | Should Work                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
-| iOS      | <li>11.X</li><li>10.X</li> <li>10.1.1</li> | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
-| Android  | <li>8.0</li><li>7.1.1</li> <li>6.0.1</li> <li>5.1.5</li> <li>4.4.2</li> | 4.4.2 and above      
+| iOS      | 10.x and 11.0 | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
+| Android  | 4.4.2 to 8.0 | 4.4.2 and above |      
 
-## Mobile Integrations and Solutions
-
-- [Rapid App Security](https://docops.ca.com/ras)
-- [CA Mobile API Gateway: Samsung SDS Nexsign Integration](https://docops.ca.com/ca-mobile-api-gateway-samsung-sds-nexsign-integration)
 
 ## Known Issues (Waiting for Alan & Kiran regression testing)
 
@@ -88,6 +87,7 @@ The Cordova Mobile SDK now supports managing the msso_config.json file outside o
 - [CA Support Online](https://support.ca.com/)
 - [Developer website and documentation](https://www.ca.com/us/developers/mas.html)
 - [CA Mobile API Gateway documentation](https://docops.ca.com/mag)
+- [CA Mobile API Gateway communities](https://communities.ca.com/community/ca-api-management-community/content?filterID=contentstatus%5Bpublished%5D~category%5Bca-mobile-api-gateway%5D)
 
 ## License
 
