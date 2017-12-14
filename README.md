@@ -33,8 +33,8 @@ It’s a reality. You don't always have the CA API Gateway fronting all your API
 - **JSON Web Token (JWT) to validate data recipients**  
 By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth. <br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK).</br>  
 
-  - [Cordova Validate Data Recipients Using JWT](http://mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt) 
-  - [Cordova Sign Requests Using JWT](mas.ca.com/docs/ios/1.6.00/guides/#jwt-data)
+  - [Cordova Validate Data Recipients Using JWT](mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt) 
+  - [Cordova Sign Requests Using JWT](mas.ca.com/docs/cordova/1.6.00/guides/#jwt-data)
 
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
@@ -57,7 +57,7 @@ The following versions are supported in Mobile SDK 1.6:
 
 | Platform | Supported     | Compatible                               |
 | -------- | ------------- | ---------------------------------------- |
-| iOS      | 10.x and 11.0 | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
+| iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients.|
 | Android  | 6.0 to 8.0    | 4.4.2 and above.                         |      
 
 
