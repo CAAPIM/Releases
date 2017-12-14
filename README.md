@@ -55,10 +55,10 @@ The following versions are supported in Mobile SDK 1.6:
 
 ## Platform Testing 
 
- Platform | Supported                                  | Should Work                              |
-| -------- | ---------------------------------------- | ---------------------------------------- |
+| Platform | Supported     | Compatible                               |
+| -------- | ------------- | ---------------------------------------- |
 | iOS      | 10.x and 11.0 | iOS 9.3.2 and above.  <br>Note: TLS 1.2 is required for iOS clients.</br> |
-| Android  | 4.4.2 to 8.0 | 4.4.2 and above |      
+| Android  | 6.0 to 8.0    | 4.4.2 and above.                         |      
 
 
 ## Limitations
