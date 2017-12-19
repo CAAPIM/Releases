@@ -3,7 +3,7 @@
 
 ## Version 1.6.00
 
-**Released**: 12/21/17
+**Released**: 12/28/17
 
 ## Features and Enhancements
 
@@ -21,6 +21,10 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 Use the new iOS MASRequestBuilder method to build a custom request to access an API. Build a request programmatically using MAS.invoke and add your own parameters. 
 
 - [iOS Access APIs](mas.ca.com/docs/iOS/1.6.00/guides/#access-apis)
+
+### Support of session lock/unlock with iOS Face ID: 
+
+Expanding our current support for iOS Fingerprint Session lock, the Mobile SDK integrates seamlessly with facial recognition technology introduced by Apple for iPhone X.  
 
 ### Cordova enhancements
 
@@ -50,7 +54,7 @@ The following versions are supported in Mobile SDK 1.6:
 | 3.3                   | 3.6           |
 | 3.2                   | 3.5           |
 
-**Note**: Some Mobile SDK features may depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
 
 ## Platform Testing 
