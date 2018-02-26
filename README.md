@@ -1,15 +1,22 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
-## Version 1.7.00
+## Version 1.6.10
 
 **Released**: TBD
 
-Android 4.1.x is supported with these limitations and changes:
+## Features and Enhancements
 
+Android 4.1.x is now supported with these limitations and changes:
 - Android Account Manager (AMS) is not supported.
 - If you are using the MASStorage framework, Admins must change a context variable in the MASStorage policy to support Android 4.x.1. See [Customize MASStorage Policy for Android 4.1.x](https://mas.ca.com/mag). If the policy is not updated, you will get an exception error when you try to delete data from cloud storage.
 - You must add the following dependency to your app module build.gradle file: ```compile org.bouncycastle:bcpkix-jdk15on:1.55```
+
+## iOS Bug Fixes
+
+Check the changelog for important iOS bug fixes.
+
+**MASFoundation**: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 
 ## Version 1.6.00
 
