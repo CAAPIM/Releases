@@ -5,26 +5,17 @@
 
 **Released**: TBD
 
-## Features and Enhancements
-
-Android 4.1.x is now supported with these limitations and changes:
-- Android Account Manager (AMS) is not supported.
-- If you are using the MASStorage framework, Admins must change a context variable in the MASStorage policy to support Android 4.x.1. See [Customize MASStorage Policy for Android 4.1.x](https://mas.ca.com/mag). If the policy is not updated, you will get an exception error when you try to delete data from cloud storage.
-- You must add the following dependency to your app module build.gradle file: ```compile org.bouncycastle:bcpkix-jdk15on:1.55```
-
-## iOS Bug Fixes
-
-Check the changelog for important iOS bug fixes.
-
-**MASFoundation**: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+**iOS Updates**
+- MASFoundation only: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- **[Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)**
 
 ## Version 1.6.00
 
 **Released**: 12/28/17
 
-## Features and Enhancements
+### Features and Enhancements
 
-### Improved app testing experience with device registration  
+#### Improved app testing experience with device registration  
 In previous versions, the SDK displayed "device already registered" errors when you installed/uninstalled apps during testing with multiple users. The errors are legitimate for production environments because the MAG server secures devices with this simple logic: only the previously-registered user or client can perform the re-registration. But this made app testing painful. 
 
 In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
@@ -33,17 +24,17 @@ In this release, the Mobile SDK generates a new device identifier after uninstal
 - [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
 - [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
             
-### Customize requests to access APIs
+#### Customize requests to access APIs
 
 Use the new iOS MASRequestBuilder method to build a custom request to access an API. Build a request programmatically using MAS.invoke and add your own parameters. 
 
 - [iOS Access APIs](mas.ca.com/docs/iOS/1.6.00/guides/#access-apis)
 
-### Support of session lock/unlock with iOS Face ID: 
+#### Support of session lock/unlock with iOS Face ID: 
 
 Expanding our current support for iOS Fingerprint Session lock, the Mobile SDK integrates seamlessly with facial recognition technology introduced by Apple for iPhone X.  
 
-### Cordova enhancements
+#### Cordova enhancements
 
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
@@ -60,9 +51,9 @@ By validating data recipients using JWT, you can add another layer of security b
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
-## Compatibility 
+### Compatibility 
 
-The following versions are supported in Mobile SDK 1.6:
+The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
 | CA Mobile API Gateway | OAuth Toolkit |
 | --------------------- | ------------- |
@@ -74,7 +65,7 @@ The following versions are supported in Mobile SDK 1.6:
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
 
-## Platform Testing 
+### Platform Testing 
 
 | Platform | Supported     | Compatible                               |
 | -------- | ------------- | ---------------------------------------- |
@@ -82,7 +73,7 @@ The following versions are supported in Mobile SDK 1.6:
 | Android  | 6.0 to 8.1    | 4.4.2 and above.                         |      
 
 
-## Limitations
+### Limitations
 
 | Issue                              | Description                              | Workaround                               |
 | ---------------------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -90,8 +81,7 @@ The following versions are supported in Mobile SDK 1.6:
 | Proximity login with BLE (Android) | (DE258130) The message, "BLE advertisement has been found with Rssi: XXX," is displayed when BLE signal is received. Proximity login with BLE may not work on apps using the default JSON configuration. Depending on the device, you may need to increase the default range of the signal strength so devices can communicate using BLE. | (Admin) In the msso_config.json file, find the msso_ble_rssi value, and increase the range from -35 (default) to -80 or higher. You may need to play with these values. |
 | Social Login (all SDKs)            | (MCT-177) The Mobile SDK authenticates only against a supported IDP using the User Management library. A social login implementation requires other identity providers. | (Admin) Customize MAG policies for other IDPs. |
 
-
-## Changelogs
+### Changelogs
 
 **iOS**
 - MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
