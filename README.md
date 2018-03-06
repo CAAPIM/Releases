@@ -3,7 +3,7 @@
 
 ## Version 1.6.10
 
-**Released**: TBD
+**Released**: 03/6/18
 
 - MASFoundation only: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
