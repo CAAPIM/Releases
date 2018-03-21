@@ -19,15 +19,15 @@ In previous versions, the SDK displayed "device already registered" errors when 
 
 In this release, the Mobile SDK generates a new device identifier after uninstall/reinstall, which reduces the likelihood that you'll get this error again. If you do get the error, we've provided the steps to remove the device from the MAG Manager.
 
-- [iOS App Testing](mas.ca.com/docs/iOS/1.6.00/guides/#app-testing)
-- [Android App Testing](mas.ca.com/docs/android/1.6.00/guides/#app-testing)
-- [Cordova App Testing](mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
+- [iOS App Testing](https://mas.ca.com/docs/iOS/1.6.00/guides/#app-testing)
+- [Android App Testing](https://mas.ca.com/docs/android/1.6.00/guides/#app-testing)
+- [Cordova App Testing](https://mas.ca.com/docs/cordova/1.6.00/guides/#app-testing)
             
 #### Customize requests to access APIs
 
 Use the new iOS MASRequestBuilder method to build a custom request to access an API. Build a request programmatically using MAS.invoke and add your own parameters. 
 
-- [iOS Access APIs](mas.ca.com/docs/iOS/1.6.00/guides/#access-apis)
+- [iOS Access APIs](https://mas.ca.com/docs/iOS/1.6.00/guides/#access-apis)
 
 #### Support of session lock/unlock with iOS Face ID: 
 
@@ -39,16 +39,16 @@ Expanding our current support for iOS Fingerprint Session lock, the Mobile SDK i
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
 
   - [Blog: How to Make Secure Calls to APIs from External Servers](https://www.ca.com/us/developers/mas/blog/how-to-make-secure-calls-to-apis-from-external-servers.html)
-  - [Cordova Send HTTP Requests to External APIs](mas.ca.com/docs/cordova/1.6.00/guides/#send-http-requests-to-external-apis)
+  - [Cordova Send HTTP Requests to External APIs](https://mas.ca.com/docs/cordova/1.6.00/guides/#send-http-requests-to-external-apis)
 
 - **JSON Web Token (JWT) to validate data recipients**  
 By validating data recipients using JWT, you can add another layer of security beyond mutual SSL and OAuth. <br>**Requires**: Advanced developer experience (because feature is implemented only in the SDK).</br>  
 
-  - [Cordova Validate Data Recipients Using JWT](mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt) 
-  - [Cordova Sign Requests Using JWT](mas.ca.com/docs/cordova/1.6.00/guides/#jwt-data)
+  - [Cordova Validate Data Recipients Using JWT](https://mas.ca.com/docs/cordova/1.6.00/guides/#validate-data-recipients-using-jwt) 
+  - [Cordova Sign Requests Using JWT](https://mas.ca.com/docs/cordova/1.6.00/guides/#jwt-data)
 
 - **Dynamic Client Configuration Using Enrollment URL**   
-The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
+The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](https://mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
 ### Compatibility 
 
@@ -63,14 +63,12 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
-
 ### Platform Testing 
 
 | Platform | Supported     | Compatible                               |
 | -------- | ------------- | ---------------------------------------- |
 | iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients.|
-| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |      
-
+| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |    
 
 ### Limitations
 
