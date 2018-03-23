@@ -1,6 +1,51 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Version 1.7.00
+
+**Released**: TBD
+
+### Features and Enhancements
+
+#### Xamarin Mobile SDK
+
+Code once and ship iOS, Android, and Windows apps using the cross-platform Xamarin Mobile SDK. This version supports:
+
+[Xamarin MASFoundation](TBD)
+- Authentication and Authorization, limited to:  
+  - Device Registration
+  - User log in and client credentials
+  - Fingerprint session lock
+  - Single Sign-on- 
+- Secure access to APIs
+- Send HTTP Requests to external APIs
+
+### Compatibility
+
+| CA Mobile API Gateway | OAuth Toolkit |
+| --------------------- | ------------- |
+| 4.2                   | 4.3           |
+| 4.0                   | 4.1           |
+| 3.3                   | 3.6           |
+| 3.2                   | 3.5           |
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
+
+### Platform Testing 
+
+| Platform | Supported     | Compatible                               |
+| -------- | ------------- | ---------------------------------------- |
+| iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients.|
+| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |      
+
+### Limitations
+
+| Issue                              | Description                              | Workaround                               |
+| ---------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| Client certificate error (iOS)     | If you configured MAG to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Change all HTTP status codes from 403 to another status code. |
+| Proximity login with BLE (Android) | (DE258130) The message, "BLE advertisement has been found with Rssi: XXX," is displayed when BLE signal is received. Proximity login with BLE may not work on apps using the default JSON configuration. Depending on the device, you may need to increase the default range of the signal strength so devices can communicate using BLE. | (Admin) In the msso_config.json file, find the msso_ble_rssi value, and increase the range from -35 (default) to -80 or higher. You may need to play with these values. |
+| Social Login (all SDKs)            | (MCT-177) The Mobile SDK authenticates only against a supported IDP using the User Management library. A social login implementation requires other identity providers. | (Admin) Customize MAG policies for other IDPs. |
+
 ## Version 1.6.10
 
 **Released**: 03/6/18
