@@ -9,14 +9,14 @@
 
 #### Xamarin Mobile SDK
 
-Code once and ship iOS, Android, and Windows apps using the cross-platform Xamarin Mobile SDK. This version supports:
+Code once and ship iOS and Android apps using the cross-platform Xamarin Mobile SDK. This version supports:
 
 [Xamarin MASFoundation](TBD)
 - Authentication and Authorization, limited to:  
   - Device Registration
   - User log in and client credentials
   - Fingerprint session lock
-  - Single Sign-on- 
+  - Single Sign-on 
 - Secure access to APIs
 - Send HTTP Requests to external APIs
 
