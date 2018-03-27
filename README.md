@@ -35,8 +35,9 @@ Code once and ship iOS and Android apps using the cross-platform Xamarin Mobile 
 
 | Platform | Supported     | Compatible                               |
 | -------- | ------------- | ---------------------------------------- |
-| iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients.|
-| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |      
+| iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients. |
+| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |
+| Xamarin  | TBD           | TBD                                      |  
 
 ### Limitations
 
