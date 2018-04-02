@@ -9,7 +9,7 @@
 
 #### Xamarin Mobile SDK
 
-Code once and ship iOS and Android apps using the cross-platform Xamarin Mobile SDK. This version supports:
+Use the Xamarin cross-platform Mobile SDK to code once in C#, and ship iOS and Android apps. This version supports:
 
 [Xamarin MASFoundation](TBD)
 - Authentication and Authorization, limited to:  
