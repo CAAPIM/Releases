@@ -9,7 +9,7 @@
 
 #### Xamarin Mobile SDK
 
-Use the Xamarin cross-platform Mobile SDK to code once in C#, and ship iOS and Android apps. This version supports:
+Use the Xamarin Mobile SDK to code once in C# and deliver iOS and Android apps. This version supports:
 
 [Xamarin MASFoundation](TBD)
 - Authentication and Authorization, limited to:  
@@ -19,6 +19,8 @@ Use the Xamarin cross-platform Mobile SDK to code once in C#, and ship iOS and A
   - Single Sign-on 
 - Secure access to APIs
 - Send HTTP Requests to external APIs
+
+**Note**: Although the Xamarin API Reference Guide exposes all of the Mobile SDK APIs, only the above features are supported in this release.
 
 ### Compatibility
 
@@ -40,13 +42,12 @@ Use the Xamarin cross-platform Mobile SDK to code once in C#, and ship iOS and A
 | Cordova  | TBD           | TBD                                      |
 | Xamarin  | TBD           | TBD                                      |  
 
-### Limitations
+### Known Issues
 
-| Issue                              | Description                              | Workaround                               |
-| ---------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Client certificate error (iOS)     | If you configured MAG to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Change all HTTP status codes from 403 to another status code. |
-| Proximity login with BLE (Android) | (DE258130) The message, "BLE advertisement has been found with Rssi: XXX," is displayed when BLE signal is received. Proximity login with BLE may not work on apps using the default JSON configuration. Depending on the device, you may need to increase the default range of the signal strength so devices can communicate using BLE. | (Admin) In the msso_config.json file, find the msso_ble_rssi value, and increase the range from -35 (default) to -80 or higher. You may need to play with these values. |
-| Social Login (all SDKs)            | (MCT-177) The Mobile SDK authenticates only against a supported IDP using the User Management library. A social login implementation requires other identity providers. | (Admin) Customize MAG policies for other IDPs. |
+| Issue         | Description                              | Workaround                               |
+| :------------ | ---------------------------------------- | ---------------------------------------- |
+| Apple SDK Bug | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| Social Login  | (MCT-177) The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
 
 ## Version 1.6.10
 
