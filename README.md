@@ -1,7 +1,13 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
-## Version 1.7.00
+## Contents
+
+- [Release 1.7.00](https://github.com/CAAPIM/Releases/edit/GA-1.7-Release-Notes/README.md/#release-1-.7-.-0-0)
+- [Release 1.6.10](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1-.6-.-1-0)
+- [Release 1.6.00](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1-.6-.-0-0)
+
+## Release 1.7.00
 
 **Released**: TBD
 
@@ -9,9 +15,8 @@
 
 #### Xamarin Mobile SDK
 
-Use the Xamarin Mobile SDK to code once in C# and deliver iOS and Android apps. This version supports:
+Use the Xamarin Mobile SDK to code once in C# and deliver your app in iOS and Android. This version supports the [Xamarin MASFoundation](TBD), which includes these features:
 
-[Xamarin MASFoundation](TBD)
 - Authentication and Authorization, limited to:  
   - Device Registration
   - User log in and client credentials
@@ -19,8 +24,6 @@ Use the Xamarin Mobile SDK to code once in C# and deliver iOS and Android apps. 
   - Single Sign-on 
 - Secure access to APIs
 - Send HTTP Requests to external APIs
-
-**Note**: Although the Xamarin API Reference Guide exposes all of the Mobile SDK APIs, only the above features are supported in this release.
 
 ### Compatibility
 
@@ -49,14 +52,14 @@ Use the Xamarin Mobile SDK to code once in C# and deliver iOS and Android apps. 
 | Apple SDK Bug | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | Social Login  | (MCT-177) The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
 
-## Version 1.6.10
+## Release 1.6.10
 
 **Released**: 03/6/18
 
 - MASFoundation only: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
-## Version 1.6.00
+## Release 1.6.00
 
 **Released**: 12/28/17
 
