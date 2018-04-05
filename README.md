@@ -1,12 +1,6 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
-## Contents
-
-- [Release 1.7.00](https://github.com/CAAPIM/Releases/GA-1.7-Release-Notes/README.md/#release-1.7.00)
-- [Release 1.6.10](https://github.com/CAAPIM/Releases/GA-1.6.10-Release-Notes/README.md/#release-1.6.10)
-- [Release 1.6.00](https://github.com/CAAPIM/Releases//GA-1.6.00-Release-Notes/README.md/#release-1.6.00)
-
 ## Release 1.7.00
 
 **Released**: TBD
