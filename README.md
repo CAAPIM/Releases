@@ -3,9 +3,9 @@
 
 ## Contents
 
-- [Release 1.7.00](https://github.com/CAAPIM/Releases/edit/GA-1.7-Release-Notes/README.md/#release-1-.7-.-0-0)
-- [Release 1.6.10](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1-.6-.-1-0)
-- [Release 1.6.00](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1-.6-.-0-0)
+- [Release 1.7.00](https://github.com/CAAPIM/Releases/edit/GA-1.7-Release-Notes/README.md/#release-1.7.0)
+- [Release 1.6.10](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1.6.10)
+- [Release 1.6.00](https://github.com/CAAPIM/Releases/edit/GA-1.6.10-Release-Notes/README.md/#release-1.6.00)
 
 ## Release 1.7.00
 
