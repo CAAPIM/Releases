@@ -39,6 +39,8 @@ Use the Xamarin Mobile SDK to code once in C# and deliver your app in iOS and An
 | Cordova  | TBD           | TBD                                      |
 | Xamarin  | TBD           | TBD                                      |  
 
+**Note**: Our Mobile Android SDK is tested only on devices using Android official versions. In devices using a custom ROM, the SDK may not work as expected.
+
 ### Known Issues
 
 | Issue         | Description                              | Workaround                               |
@@ -117,6 +119,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 | Android  | 6.0 to 8.1                               | 4.4.2 and above.                         |
 | Cordova  | <li>iOS 10.x and 11.0</li><li> Android 7.0 to 8.1</li> |                                          |
 
+**Note**: Our Mobile Android SDK is tested only on devices using Android official versions. In devices using a custom ROM, the SDK may not work as expected.
 
 ### Limitations
 
@@ -142,7 +145,6 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
-
 
 ## More Info
 
