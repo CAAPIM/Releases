@@ -19,6 +19,8 @@ Use the Xamarin Mobile SDK to code once in C# and deliver your app in iOS and An
 - Secure access to APIs
 - Send HTTP Requests to external APIs
 
+The Xamarin Mobile SDK supports downloading the latest SDK from NuGet, which is embedded in Visual Studio. 
+
 ### Compatibility
 
 | CA Mobile API Gateway | OAuth Toolkit |
