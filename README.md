@@ -13,7 +13,7 @@ Use the Xamarin Mobile SDK to code once in C#, and deliver apps in iOS and Andro
 
 In this version, we support the [Xamarin MASFoundation Library](link TBD), and these features:
 
-- Authentication and Authorization, limited to:  
+- Authentication and authorization, limited to:  
   - Device Registration
   - User log in and client credentials
   - Fingerprint session lock
