@@ -9,7 +9,9 @@
 
 #### Xamarin Mobile SDK
 
-Use the Xamarin Mobile SDK to code once in C# and deliver your app in iOS and Android. This version supports the [Xamarin MASFoundation](TBD), which includes these features:
+Use the Xamarin Mobile SDK to code once in C#, and deliver apps in iOS and Android. 
+
+In this version, we support the [Xamarin MASFoundation Library](link TBD), and these features:
 
 - Authentication and Authorization, limited to:  
   - Device Registration
@@ -19,18 +21,22 @@ Use the Xamarin Mobile SDK to code once in C# and deliver your app in iOS and An
 - Secure access to APIs
 - Send HTTP Requests to external APIs
 
-The Xamarin Mobile SDK supports downloading the latest SDK from NuGet, which is embedded in Visual Studio. 
+##### Get Started 
+
+The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get the library on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
+
+Either way, here's how to [Get Started: Xamarin Mobile SDK](LInk - Common Guide)
 
 ### Compatibility
 
 | CA Mobile API Gateway | OAuth Toolkit |
 | --------------------- | ------------- |
-| 4.2                   | 4.3           |
+| 4.1                   | 4.2           |
 | 4.0                   | 4.1           |
 | 3.3                   | 3.6           |
 | 3.2                   | 3.5           |
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
 ### Platform Testing 
 
@@ -41,14 +47,32 @@ The Xamarin Mobile SDK supports downloading the latest SDK from NuGet, which is 
 | Cordova  | TBD           | TBD                                      |
 | Xamarin  | TBD           | TBD                                      |  
 
-**Note**: Our Mobile Android SDK is tested only on devices using Android official versions. In devices using a custom ROM, the SDK may not work as expected.
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
 ### Known Issues
 
-| Issue         | Description                              | Workaround                               |
-| :------------ | ---------------------------------------- | ---------------------------------------- |
-| Apple SDK Bug | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
-| Social Login  | (MCT-177) The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
+| Issue                                    | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| Apple SDK bug                            | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| Social login limitation                  | (MCT-177) The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
+**[Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)**
+
+**Cordova**
+- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
 
 ## Release 1.6.10
 
@@ -131,7 +155,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 | Proximity login with BLE (Android) | (DE258130) The message, "BLE advertisement has been found with Rssi: XXX," is displayed when BLE signal is received. Proximity login with BLE may not work on apps using the default JSON configuration. Depending on the device, you may need to increase the default range of the signal strength so devices can communicate using BLE. | (Admin) In the msso_config.json file, find the msso_ble_rssi value, and increase the range from -35 (default) to -80 or higher. You may need to play with these values. |
 | Social Login (all SDKs)            | (MCT-177) The Mobile SDK authenticates only against a supported IDP using the User Management library. A social login implementation requires other identity providers. | (Admin) Customize MAG policies for other IDPs. |
 
-## Changelogs
+### Changelogs
 
 **iOS**
 - MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
