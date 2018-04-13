@@ -23,7 +23,7 @@ In this version, we support the [Xamarin MASFoundation Library](link TBD), and t
 
 ##### Get Started 
 
-The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get the library on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
+The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get Xamarin MASFoundation (TBD?) on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
 
 Either way, here's how to [Get Started: Xamarin Mobile SDK](LInk - Common Guide)
 
