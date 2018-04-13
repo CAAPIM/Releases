@@ -7,7 +7,7 @@
 
 ### Features and Enhancements
 
-#### Xamarin Mobile SDK
+#### New! Xamarin Mobile SDK
 
 Use the Xamarin Mobile SDK to code once in C#, and deliver apps in iOS and Android. 
 
