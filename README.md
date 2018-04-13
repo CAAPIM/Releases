@@ -7,11 +7,11 @@
 
 ### Features and Enhancements
 
-#### New! Xamarin Mobile SDK
+#### New! Mobile SDK for Xamarin
 
-Use the Xamarin Mobile SDK to code once in C#, and deliver apps in iOS and Android. 
+Use the Mobile SDK for Xamarin to code once in C#, and deliver apps in iOS and Android. 
 
-In this version, we support the [Xamarin MASFoundation Library](link TBD), and these features:
+In this version, we support the [Xamarin MASFoundation library](link TBD), and these features:
 
 - Authentication and authorization, limited to:  
   - Device Registration
@@ -25,7 +25,7 @@ In this version, we support the [Xamarin MASFoundation Library](link TBD), and t
 
 The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get Xamarin MASFoundation (TBD?) on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
 
-Either way, here's how to [Get Started: Xamarin Mobile SDK](LInk - Common Guide)
+Either way, here's how to [Get Started: Xamarin Mobile SDK](Link - Common Guide)
 
 ### Compatibility
 
