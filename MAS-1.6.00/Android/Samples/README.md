@@ -1,4 +1,4 @@
-# Sample Application Notice of Move
+# Notice: Sample Applications Have Moved
 
 **All sample apps have moved to GITHub as of 1.6.00 release.**
 
