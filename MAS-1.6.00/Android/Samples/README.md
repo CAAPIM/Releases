@@ -1,7 +1,5 @@
 # Sample Application Notice of Move
 
-## Version 1.6.00
-
 **All sample apps have moved to GITHub as of 1.6.00 release**
 
 
