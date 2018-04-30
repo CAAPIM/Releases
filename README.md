@@ -87,7 +87,7 @@ All sample apps have moved to GITHub as of 1.6.00 release.
 - MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
 
 **Android**
-- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
 - Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
