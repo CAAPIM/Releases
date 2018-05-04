@@ -85,8 +85,8 @@ As of 1.6.00, all sample apps have moved to GITHub:
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
 
 **Xamarin**
-- [Xamarin for Android SDK ChangeLog](https://github.com/CAAPIM/Android-MASFoundationK/blob/master/ChangeLog.md)
-- [Xamarin for iOS SDK ChangeLog](https://github.com/CAAPIM/iOS-MASFoundation/blob/master/ChangeLog.md)
+- Xamarin-Android-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Android-MASFoundationK/blob/master/ChangeLog.md)
+- Xamarin-iOS-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/iOS-MASFoundation/blob/master/ChangeLog.md)
 
 ## Release 1.6.10
 
