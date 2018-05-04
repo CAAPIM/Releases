@@ -11,7 +11,7 @@
 
 Use the Mobile SDK for Xamarin to code once in C#, and deliver apps in iOS and Android. 
 
-In this version, we support the [Xamarin MASFoundation library](link TBD), and these features:
+In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/develop) with these features:
 
 - Authentication and authorization, limited to:  
   - Device Registration
@@ -25,27 +25,16 @@ In this version, we support the [Xamarin MASFoundation library](link TBD), and t
 
 The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get MASFoundation.Xamarin on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
 
-Either way, here's how to [Get Started: Xamarin Mobile SDK](Link - Common Guide)
+Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
 
 ### Sample Apps Have Moved
 
-All sample apps have moved to GITHub as of 1.6.00 release.
+As of 1.6.00, all sample apps have moved to GITHub:
 
-**Android Sample Apps**       
- - [Sample-App-MAS-Android-Access-API-Geolocation-And-OTP](https://github.com/CAAPIM/Sample-App-MAS-Android-Access-API-Geolocation-And-OTP)
- - [Sample-App-MAS-Android-Fingerprint-Sessions-Lock](https://github.com/CAAPIM/Sample-App-MAS-Android-Fingerprint-Sessions-Lock)
- - [Sample-App-MAS-Android-Login-User-Authentication-And-Authorization](https://github.com/CAAPIM/Sample-App-MAS-Android-Login-User-Authentication-And-Authorization)
- - [Sample-App-MAS-Android-Messaging](https://github.com/CAAPIM/Sample-App-MAS-Android-Messaging)
- - [Sample-App-MAS-Android-Secure-Cloud-And-Local-Storage](https://github.com/CAAPIM/Sample-App-MAS-Android-Secure-Cloud-And-Local-Storage)
- - [Sample-App-MAS-Android-User-Group-Management](https://github.com/CAAPIM/Sample-App-MAS-Android-User-Group-Management)
-
-**iOS Sample Apps**        
- - [Sample-App-MAS-iOS-Access-API-Geolocation-And-OTP](https://github.com/CAAPIM/Sample-App-MAS-iOS-Access-API-Geolocation-And-OTP)
- - [Sample-App-MAS-iOS-Fingerprint-Sessions-Lock](https://github.com/CAAPIM/Sample-App-MAS-iOS-Fingerprint-Sessions-Lock)
- - [Sample-App-MAS-iOS-Messaging](https://github.com/CAAPIM/Sample-App-MAS-iOS-Messaging)
- - [Sample-App-MAS-iOS-Login-User-Authentication-And-Authorization](https://github.com/CAAPIM/Sample-App-MAS-iOS-Login-User-Authentication-And-Authorization)
- - [Sample-App-MAS-iOS-Secure-Cloud-And-Local-Storage](https://github.com/CAAPIM/Sample-App-MAS-iOS-Secure-Cloud-And-Local-Storage)
- - [Sample-App-MAS-iOS-User-Group-Management](https://github.com/CAAPIM/Sample-App-MAS-iOS-User-Group-Management)
+- [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Android/Samples)
+- [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
+- [Cordova](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Cordova/Samples)
+- [Xamarin](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Xamarin/Samples)
 
 ### Compatibility
 
@@ -94,6 +83,10 @@ All sample apps have moved to GITHub as of 1.6.00 release.
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin for Android SDK ChangeLog](https://github.com/CAAPIM/Android-MASFoundationK/blob/master/ChangeLog.md)
+- [Xamarin for iOS SDK ChangeLog](https://github.com/CAAPIM/iOS-MASFoundation/blob/master/ChangeLog.md)
 
 ## Release 1.6.10
 
