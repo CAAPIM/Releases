@@ -3,7 +3,7 @@
 
 ## Release 1.7.00
 
-**Released**: TBD
+**Released**: June 18, 2018
 
 ### Features and Enhancements
 
@@ -92,7 +92,7 @@ As of 1.6.00, all sample apps have moved to GITHub:
 
 **Released**: 03/6/18
 
-- MASFoundation only: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- [iOS MASFoundation Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 ## Release 1.6.00
