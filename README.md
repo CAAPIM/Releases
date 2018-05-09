@@ -40,15 +40,15 @@ As of 1.6.00, all sample apps have moved to GITHub:
 
 The following table shows the MAG versions and product compatibility. 
 
-| MAG  | OAuth Toolkit | **API Gateway** | Mobile SDK         | Mobile Developer Console |
+| MAG  | OAuth Toolkit | API Gateway | Mobile SDK         | Mobile Developer Console |
 | ---- | ------------- | --------------- | ------------------ | ------------------------ |
 | 4.1  | 4.3, 4.2      | 9.3             | 1.7, 1.6           | 1.0, 1.1                 |
-| 4.0  | 4.0, 4.1*     | 9.2             | 1.4, 1.5, 1.6, 1.7 | 1.0                      |
-| 3.3  | 3.6           | 9.2.x, 9.1.x**  | 1.3, 1.6, 1.7      | x                        |
+| 4.0  | 4.0, 4.1`*`     | 9.2             | 1.4, 1.5, 1.6, 1.7 | 1.0                      |
+| 3.3  | 3.6           | 9.2.x, 9.1.x`**`  | 1.3, 1.6, 1.7      | x                        |
 | 3.2  | 3.5.01        | 9.1             | 1.2, 1.6, 1.7      | x                        |
 | 3.2  | 3.5           | 9.1             | 1.2, 1.6, 1.7      | x                        |
 
-*  Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+* Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
 ** Cassandra database is not support in CA API Gateway version 9.1.x
 **Note**: Unless otherwise specified, all minor versions (CRs) are supported as part of the major release.
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
