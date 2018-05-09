@@ -29,7 +29,7 @@ Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/do
 
 ### Sample Apps Have Moved
 
-As of 1.6.00, all sample apps have moved to GITHub:
+As of 1.6.00, all sample apps have moved to GitHub:
 
 - [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Android/Samples)
 - [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
@@ -40,12 +40,12 @@ As of 1.6.00, all sample apps have moved to GITHub:
 
 The following table shows the MAG versions and product compatibility. 
 
-| MAG  | OAuth Toolkit | API Gateway | Mobile SDK         | Mobile Developer Console |
-| ---- | ------------- | ----------- | ------------------ | ------------------------ |
-| 4.1  | 4.3, 4.2      | 9.3         | 1.7, 1.6           | 1.0, 1.1                 |
-| 4.0  | 4.0, 4.1`*`     | 9.2         | 1.4, 1.5, 1.6, 1.7 | 1.0                      |
-| 3.3  | 3.6           | 9.2, 9.1`**`  | 1.3, 1.6, 1.7      | x                        |
-| 3.2  | 3.5           | 9.1         | 1.2, 1.6, 1.7      | x     
+| Mobile SDK         | MAG  | OAuth Toolkit | API Gateway |
+| ------------------ | ---- | ------------- | ----------- |
+| 1.7, 1.6           | 4.1  | 4.3, 4.2      | 9.3         |
+| 1.4, 1.5, 1.6, 1.7 | 4.0  | 4.0, 4.1*     | 9.2         |
+| 1.3, 1.6, 1.7      | 3.3  | 3.6           | 9.2, 9.1**  |
+| 1.2, 1.6, 1.7      | 3.2  | 3.5           | 9.1         |
 
 `*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).<br>
 
