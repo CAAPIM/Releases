@@ -51,7 +51,7 @@ The following table shows the MAG versions and product compatibility.
 
 `**` Cassandra database is not support in CA API Gateway version 9.1.x.</br>
 
-**Note**: Unless otherwise specified, all minor versions (CRs) are supported as part of the major release.<br>
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
 
