@@ -8,17 +8,10 @@
 ![RSS Feed](images/RSS_Feed_Atom.png)
 
 Just add these links to your favorite RSS feeder:
-- iOS - (MASFoundation) https://github.com/CAAPIM/iOS-MAS-Foundation/tags.atom  
-  - (MASConnecta) https://github.com/CAAPIM/iOS-MAS-Connecta/tags.atom  
-  - (MASUI) https://github.com/CAAPIM/iOS-MAS-UI/tags.atom  
-  - (MASIdentityManagement) https://github.com/CAAPIM/iOS-MAS-IdentityManagement/tags.atom
-  - (MASStorage) https://github.com/CAAPIM/iOS-MAS-Storage/tags.atom   
-- Android - https://github.com/CAAPIM/Android-MAS-SDK/tags.atom
-- Cordova - https://github.com/CAAPIM/Cordova-MAS-Foundation/tags.atom  
-  - (MASConnecta) https://github.com/CAAPIM/Cordova-MAS-Connecta/tags.atom  
-  - (MASIdentity) https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/tags.atom
-  - (MASStorage) https://github.com/CAAPIM/Cordova-MAS-Storage/tags.atom   
-- Xamarin for iOS - https://github.com/CAAPIM/Xamarin-MAS-Foundation/tags.atom
+- (iOS) https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom  
+- (Android) https://github.com/CAAPIM/Android-MAS-SDK/releases.atom  
+- (Cordova) https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom  
+- (Xamarin) https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom  
 
 ### Features and Enhancements
 
