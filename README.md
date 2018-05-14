@@ -8,10 +8,10 @@
 ![RSS Feed](images/RSS_Feed_Atom.png)
 
 Just add these links to your favorite RSS feeder:
-- (iOS) https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom  
-- (Android) https://github.com/CAAPIM/Android-MAS-SDK/releases.atom  
-- (Cordova) https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom  
-- (Xamarin) https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom  
+- [iOS MASFoundation] (https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
+- [Android SDK] (https://github.com/CAAPIM/Android-MAS-SDK/releases.atom)  
+- [Cordova SDK] (https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom) 
+- [Xamarin MASFoundation] (https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom) 
 
 ### Features and Enhancements
 
