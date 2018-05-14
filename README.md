@@ -5,9 +5,8 @@
 
 <br>**Released**: June 18, 2018</br>
 
-::: Container width="200" align="left"
 ![RSS Feed](images/RSS_Feed_Atom.png)
-:::
+
 Just add these links to your favorite RSS feeder:
 - `https://github.com/CAAPIM/iOS-MAS-Foundation/tags.atom`
 - `https://github.com/CAAPIM/Android-MAS-Foundation/tags.atom`
