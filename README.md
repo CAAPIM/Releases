@@ -16,7 +16,6 @@ Just add these links to your favorite RSS feeder:
 - Android - https://github.com/CAAPIM/Android-MAS-SDK/tags.atom
 - Cordova - https://github.com/CAAPIM/Cordova-MAS-Foundation/tags.atom  
   - (MASConnecta) https://github.com/CAAPIM/Cordova-MAS-Connecta/tags.atom  
-  - (MASUI) https://github.com/CAAPIM/Cordova-MAS-UI/tags.atom  
   - (MASIdentity) https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/tags.atom
   - (MASStorage) https://github.com/CAAPIM/Cordova-MAS-Storage/tags.atom   
 - Xamarin for iOS - https://github.com/CAAPIM/Xamarin-MAS-Foundation/tags.atom
