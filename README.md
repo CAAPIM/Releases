@@ -59,14 +59,14 @@ As of 1.6.00, all sample apps have moved to GitHub:
 **Note**: All minor versions (CRs) are supported as part of the major release.
 <br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
 
-### Platform Testing 
+### SDK Platform Support
 
-| Platform | Supported     | Compatible                               |
-| -------- | ------------- | ---------------------------------------- |
-| iOS      | 10.x and 11.0 | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients. |
-| Android  | 6.0 to 8.1    | 4.4.2 and above.                         |
-| Cordova  | TBD           | TBD                                      |
-| Xamarin  | TBD           | TBD                                      |  
+| Platform | Supported           |
+| -------- | ------------------- |
+| iOS      | 9.0 through 11.0    |
+| Android  | 4.4.2 through 8.1.0 |
+| Cordova  | 7.0.1 and 7.10      |
+| Xamarin  | TBD                 |
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
