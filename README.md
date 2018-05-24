@@ -102,14 +102,14 @@ As of 1.6.00, all sample apps have moved to GitHub:
 
 ## Release 1.6.10
 
-**Released**: 03/6/18
+**Released**: March 6, 2018
 
 - [iOS MASFoundation Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 ## Release 1.6.00
 
-**Released**: 12/28/17
+**Released**: December 28, 2017
 
 ### Features and Enhancements
 
@@ -191,7 +191,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 - MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
 
 **Android**
-- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
 - Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
