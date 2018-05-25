@@ -149,7 +149,7 @@ By validating data recipients using JWT, you can add another layer of security b
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](http://mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
-### Compatibility 
+### Product Compatibility 
 
 The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
@@ -163,15 +163,16 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
 
-### Platform Testing 
+### SDK Support
 
-| Platform | Supported                                | Compatible                               |
-| -------- | ---------------------------------------- | ---------------------------------------- |
-| iOS      | 10.x and 11.0                            | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients. |
-| Android  | 6.0 to 8.1                               | 4.4.2 and above.                         |
-| Cordova  | <li>iOS 10.x and 11.0</li><li> Android 7.0 to 8.1</li> |                                          |
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | 9.0 through 11.0                         |
+| Android  | 4.4.2 through 8.1.0                      |
+| Cordova  | 7.0.1 and 7.10                           |
+| Xamarin  | <li>(iOS) 9.0 through 11.0</li><li>(Android) 4.4.2 through 8.1.0</li> |
 
-**Note**: Our Mobile Android SDK is tested only on devices using Android official versions. In devices using a custom ROM, the SDK may not work as expected.
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
 ### Limitations
 
