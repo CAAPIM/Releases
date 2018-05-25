@@ -61,12 +61,12 @@ As of 1.6.00, all sample apps have moved to GitHub:
 
 ### SDK Platform Support
 
-| Platform | Supported           |
-| -------- | ------------------- |
-| iOS      | 9.0 through 11.0    |
-| Android  | 4.4.2 through 8.1.0 |
-| Cordova  | 7.0.1 and 7.10      |
-| Xamarin  | TBD                 |
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | 9.0 through 11.0                         |
+| Android  | 4.4.2 through 8.1.0                      |
+| Cordova  | 7.0.1 and 7.10                           |
+| Xamarin  | <li>(iOS) 9.0 through 11.0</li><li> (Android)4.4.2 through 8.1.0</li> |
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
