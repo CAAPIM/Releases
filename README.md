@@ -177,9 +177,9 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
 | Platform | Supported                                |
 | -------- | ---------------------------------------- |
-| iOS      | 9.0 through 11.0                         |
-| Android  | 4.4.2 through 8.1.0                      |
-| Cordova  | 7.0.1 and 7.10                           |
+| iOS      | <li>9.0 through 11.0</li>                         |
+| Android  | <li>4.4.2 through 8.1.0</li>                      |
+| Cordova  | <li>7.0.1 and 7.10</li>                           |
 | Xamarin  | <li>(iOS) 9.0 through 11.0</li><li>(Android) 4.4.2 through 8.1.0</li> |
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
