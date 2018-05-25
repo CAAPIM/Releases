@@ -46,12 +46,12 @@ As of 1.6.00, all sample apps have moved to GitHub:
 
 ### Product Compatibility
 
-| MAG  | OAuth Toolkit | API Gateway | Mobile SDK         |
-| ---- | ------------- | ----------- | ------------------ |
-| 4.1  | 4.3, 4.2      | 9.3         | 1.7, 1.6           |
-| 4.0  | 4.0, 4.1*     | 9.2         | 1.4, 1.5, 1.6, 1.7 |
-| 3.3  | 3.6           | 9.2, 9.1**  | 1.3, 1.6, 1.7      |
-| 3.2  | 3.5           | 9.1         | 1.2, 1.6, 1.7      |
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.7, 1.6                             |
+| 4.0                   | 4.0, 4.1`*`                     | 9.2            | 1.4, 1.5, 1.6, 1.7                   |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.3, 1.6, 1.7                        |
+| 3.2                   | 3.5                             | 9.1            | 1.2, 1.6, 1.7                        |
 
 `*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
