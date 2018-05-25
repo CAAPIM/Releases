@@ -149,6 +149,16 @@ By validating data recipients using JWT, you can add another layer of security b
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](http://mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
+#### Sample Apps Have Moved
+
+As of 1.6.00, all sample apps have moved to GitHub:
+
+- [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Android/Samples)
+- [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/iOS/Samples)
+- [Cordova](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Cordova/Samples)
+- [Xamarin](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Xamarin/Samples)
+
+
 ### Product Compatibility 
 
 The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
