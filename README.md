@@ -5,14 +5,6 @@
 
 <br>**Released**: June 18, 2018</br>
 
-![RSS Feed](images/RSS_Feed_Atom.png)
-
-Just add these links to your favorite RSS feeder:
-- [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
-- [Android SDK](https://github.com/CAAPIM/Android-MAS-SDK/releases.atom)  
-- [Cordova SDK](https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom) 
-- [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom) 
-
 ### Features and Enhancements
 
 #### New! Mobile SDK for Xamarin
@@ -34,6 +26,16 @@ In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPI
 The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get MASFoundation.Xamarin on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
 
 Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
+
+### Get SDK Updates
+
+![RSS Feed](images/RSS_Feed_Atom.png)
+
+Just add these links to your favorite RSS feeder:
+- [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
+- [Android SDK](https://github.com/CAAPIM/Android-MAS-SDK/releases.atom)  
+- [Cordova SDK](https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom) 
+- [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom) 
 
 ### Sample Apps Have Moved
 
