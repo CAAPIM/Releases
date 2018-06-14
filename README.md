@@ -41,10 +41,10 @@ Just add these links to your favorite RSS feeder:
 
 As of 1.6.00, all sample apps have moved to GitHub:
 
-- [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Android/Samples)
+- [Android](/MAS-1.7.00/Android/Samples)
 - [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
-- [Cordova](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Cordova/Samples)
-- [Xamarin](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Xamarin/Samples)
+- [Cordova](/MAS-1.7.00/Cordova/Samples)
+- [Xamarin](https://github.com/CAAPIM/Xamarin-MAS-Foundation/tree/master/sample)
 
 ### Product Compatibility
 
