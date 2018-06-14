@@ -3,7 +3,7 @@
 
 ## Release 1.7.00
 
-<br>**Released**: June 18, 2018</br>
+<br>**Released**: June 21, 2018</br>
 
 ### Features and Enhancements
 
@@ -11,7 +11,7 @@
 
 Use the Mobile SDK for Xamarin to code once in C#, and deliver apps in iOS and Android. 
 
-In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/develop) with these features:
+In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
 
 - Authentication and authorization, limited to:  
   - Device Registration
