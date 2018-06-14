@@ -1,16 +1,117 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
-## Version 1.6.10
+## Release 1.7.00
 
-**Released**: 03/6/18
+<br>**Released**: June 18, 2018</br>
 
-- MASFoundation only: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+### Features and Enhancements
+
+#### New! Mobile SDK for Xamarin
+
+Use the Mobile SDK for Xamarin to code once in C#, and deliver apps in iOS and Android. 
+
+In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/develop) with these features:
+
+- Authentication and authorization, limited to:  
+  - Device Registration
+  - User log in and client credentials
+  - Fingerprint session lock
+  - Single Sign-on 
+- Secure access to APIs
+- Send HTTP Requests to external APIs
+
+##### Get Started 
+
+The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get MASFoundation.Xamarin on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
+
+Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
+
+### Get SDK Updates
+
+![RSS Feed](images/RSS_Feed_Atom.png)
+
+Just add these links to your favorite RSS feeder:
+- [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
+- [Android SDK](https://github.com/CAAPIM/Android-MAS-SDK/releases.atom)  
+- [Cordova SDK](https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom) 
+- [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom) 
+
+### Sample Apps Have Moved
+
+As of 1.6.00, all sample apps have moved to GitHub:
+
+- [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Android/Samples)
+- [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
+- [Cordova](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Cordova/Samples)
+- [Xamarin](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/Xamarin/Samples)
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.7, 1.6                             |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.7, 1.6, 1.5, 1.4                   |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.7, 1.6, 1.3                        |
+| 3.2                   | 3.5                             | 9.1            | 1.7, 1.6, 1.2                        |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 11.0</li>                         |
+| Android  | <li>4.4.2 through 8.1.0</li>                     |
+| Cordova  | <li>7.0.1 and 7.10</li>                           |
+| Xamarin  | <li>(iOS) 9.0 through 11.0</li><li>(Android) 4.4.2 through 8.1.0</li> |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| Apple SDK bug                            | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| (MCT-177: All SDKs) Social login limitation | The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
+| (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
+**Android**
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
-## Version 1.6.00
+**Cordova**
+- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
 
-**Released**: 12/28/17
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
+
+## Release 1.6.10
+
+**Released**: March 6, 2018
+
+- [iOS MASFoundation Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+## Release 1.6.00
+
+**Released**: December 28, 2017
 
 ### Features and Enhancements
 
@@ -50,7 +151,17 @@ By validating data recipients using JWT, you can add another layer of security b
 - **Dynamic Client Configuration Using Enrollment URL**   
 The Cordova Mobile SDK now supports managing the msso_config.json file outside of the app bundle. This feature provides another layer of security, and avoids having to reinstall the app to receive updates or when using a different MAG server. To understand the benefits, see [Dynamic Device Enrollment](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/prepare-devices-and-apps-for-developers/dynamic-device-enrollment). For the new SDK initialization method, see [Start with Enrollment URL](http://mas.ca.com/docs/cordova/1.6.00/guides/#set-up-project-and-start-the-sdk).
             
-### Compatibility 
+#### Sample Apps Have Moved
+
+As of 1.6.00, all sample apps have moved to GitHub:
+
+- [Android](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Android/Samples)
+- [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/iOS/Samples)
+- [Cordova](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Cordova/Samples)
+- [Xamarin](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.6.00/Xamarin/Samples)
+
+
+### Product Compatibility 
 
 The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
@@ -64,14 +175,16 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4). 
 
 
-### Platform Testing 
+### SDK Support
 
-| Platform | Supported                                | Compatible                               |
-| -------- | ---------------------------------------- | ---------------------------------------- |
-| iOS      | 10.x and 11.0                            | iOS 9.3.2 and above. Note: TLS 1.2 is required for iOS clients. |
-| Android  | 6.0 to 8.1                               | 4.4.2 and above.                         |
-| Cordova  | <li>iOS 10.x and 11.0</li><li> Android 7.0 to 8.1</li> |                                          |
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 11.0</li>                         |
+| Android  | <li>4.4.2 through 8.1.0</li>                      |
+| Cordova  | <li>7.0.1 and 7.10</li>                           |
+| Xamarin  | <li>(iOS) 9.0 through 11.0</li><li>(Android) 4.4.2 through 8.1.0</li> |
 
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
 ### Limitations
 
@@ -81,7 +194,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 | Proximity login with BLE (Android) | (DE258130) The message, "BLE advertisement has been found with Rssi: XXX," is displayed when BLE signal is received. Proximity login with BLE may not work on apps using the default JSON configuration. Depending on the device, you may need to increase the default range of the signal strength so devices can communicate using BLE. | (Admin) In the msso_config.json file, find the msso_ble_rssi value, and increase the range from -35 (default) to -80 or higher. You may need to play with these values. |
 | Social Login (all SDKs)            | (MCT-177) The Mobile SDK authenticates only against a supported IDP using the User Management library. A social login implementation requires other identity providers. | (Admin) Customize MAG policies for other IDPs. |
 
-## Changelogs
+### Changelogs
 
 **iOS**
 - MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
@@ -90,14 +203,14 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
 - MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
 
-**[Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)**
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
 - Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
-
 
 ## More Info
 
