@@ -2,7 +2,6 @@
 
 **All sample apps have moved to GITHub as of 1.6.00 release. Links will redirect to the latest released versions.**
 
-     
 - [Sample-App-MAS-iOS-Access-API-Geolocation-And-OTP](https://github.com/CAAPIM/Sample-App-MAS-iOS-Access-API-Geolocation-And-OTP)
 - [Sample-App-MAS-iOS-Fingerprint-Sessions-Lock](https://github.com/CAAPIM/Sample-App-MAS-iOS-Fingerprint-Sessions-Lock)
 - [Sample-App-MAS-iOS-Messaging](https://github.com/CAAPIM/Sample-App-MAS-iOS-Messaging)
