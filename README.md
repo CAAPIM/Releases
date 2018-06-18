@@ -9,8 +9,7 @@
 
 #### New! Mobile SDK for Xamarin®
 
-The Mobile SDK for Xamarin allows application developers to secure their cross-platform mobile apps with CA Mobile API Gateway.
-In this version, we support [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
+The Mobile SDK for Xamarin allows you to secure your cross-platform mobile apps with CA Mobile API Gateway. In this version, we support [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
 
 - Authentication and Authorization, limited to:  
   - Password and client credentials flows, with device registration
@@ -27,12 +26,12 @@ The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which em
 
 Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
 
-#### Cordova Get Started CLI
+#### Cordova App CLI Utility
 
-The new Cordova CLI lets developers create a MAS-enabled Cordova app with just three commands:
-- **mas forge** creates a cordova project at the specified path
-- **mas configure** adds the msso_config to the project
-- **mas prepare** readies the app with the specified MAS-Template, Foundation, Identity Management, Connecta, and Storage
+The new Cordova app CLI utility lets you create a MAS-enabled Cordova app with just three commands:
+- **mas forge** creates a Cordova project at the specified path
+- **mas configure** lets you add the msso_config.json file to the project
+- **mas prepare** prepares the app with these libraries: MAS-Template, MASFoundation, MASIdentity Management, MASConnecta, and MASStorage
 
 [Get the CLI](tbd)
 
@@ -46,11 +45,11 @@ Just add these links to your favorite RSS feeder:
 
 ### Sample Apps Have Moved
 
-As of 1.6.00, all sample apps have moved to GitHub:
-- [Android](/MAS-1.7.00/Android/Samples)
-- [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
-- [Cordova](/MAS-1.7.00/Cordova/Samples)
-- [Xamarin](https://github.com/CAAPIM/Xamarin-MAS-Foundation/tree/master/sample)
+As of 1.6.00, all sample apps have moved to their repositories:
+- [Android](https://github.com/CAAPIM/Android-MAS-SDK#sample-apps)
+- [iOS](https://github.com/CAAPIM/iOS-MAS-SDK#sample-apps)
+- [Cordova](https://github.com/CAAPIM/Cordova-MAS-SDK#android)
+- [Xamarin](https://github.com/CAAPIM/Xamarin-MAS-SDK#sample-apps)
 
 ### Product Compatibility
 
@@ -86,7 +85,6 @@ As of 1.6.00, all sample apps have moved to GitHub:
 | Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | (MCT-177: All SDKs) Social login limitation | The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
 | (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
-
 
 ### Changelogs
 
