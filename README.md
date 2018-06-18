@@ -35,17 +35,9 @@ The new Cordova app CLI utility lets you create a MAS-enabled Cordova app with j
 
 [Get the CLI](tbd)
 
-### Get SDK Updates
-
-Just add these links to your favorite RSS feeder:
-- [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
-- [Android SDK](https://github.com/CAAPIM/Android-MAS-SDK/releases.atom)  
-- [Cordova SDK](https://github.com/CAAPIM/Cordova-MAS-Foundation/releases.atom) 
-- [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-Foundation/releases.atom) 
-
 ### Sample Apps Have Moved
 
-As of 1.6.00, all sample apps have moved to their repositories:
+As of 1.6.00, all sample apps have moved to their respective repositories:
 - [Android](https://github.com/CAAPIM/Android-MAS-SDK#sample-apps)
 - [iOS](https://github.com/CAAPIM/iOS-MAS-SDK#sample-apps)
 - [Cordova](https://github.com/CAAPIM/Cordova-MAS-SDK#android)
