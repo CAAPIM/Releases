@@ -7,10 +7,9 @@
 
 ### Features and Enhancements
 
-#### New! Mobile SDK for Xamarin
+#### New! Mobile SDK for Xamarin®
 
 The Mobile SDK for Xamarin allows application developers to secure their cross-platform mobile apps with CA Mobile API Gateway.
-
 In this version, we support [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
 
 - Authentication and Authorization, limited to:  
@@ -24,18 +23,20 @@ In this version, we support [Xamarin MASFoundation](https://github.com/CAAPIM/Xa
   - Access APIS hosted in external servers
 - All SDK initialization options and advanced configuration
 
-##### Get Started 
-
 The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which embeds the NuGet dependency manager. Or, you can get MASFoundation.Xamarin on the [NuGet site](https://www.nuget.org/packages?q=MASFoundation).
 
 Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
 
-#### Cordova Get Starte CLI
+#### Cordova Get Started CLI
 
+The new Cordova CLI lets developers create a MAS-enabled Cordova app with just three commands:
+- **mas forge** creates a cordova project at the specified path
+- **mas configure** adds the msso_config to the project
+- **mas prepare** readies the app with the specified MAS-Template, Foundation, Identity Management, Connecta, and Storage
+
+[Get the CLI](tbd)
 
 ### Get SDK Updates
-
-![RSS Feed][/images/RSS_Feed_Atom.png]
 
 Just add these links to your favorite RSS feeder:
 - [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
@@ -46,7 +47,6 @@ Just add these links to your favorite RSS feeder:
 ### Sample Apps Have Moved
 
 As of 1.6.00, all sample apps have moved to GitHub:
-
 - [Android](/MAS-1.7.00/Android/Samples)
 - [iOS](https://github.com/CAAPIM/Releases/tree/GA-1.7-Release-Notes/MAS-1.7.00/iOS/Samples)
 - [Cordova](/MAS-1.7.00/Cordova/Samples)
@@ -83,9 +83,10 @@ As of 1.6.00, all sample apps have moved to GitHub:
 | Issue or Limitation                      | Description                              | Workaround                               |
 | :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
-| Apple SDK bug                            | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | (MCT-177: All SDKs) Social login limitation | The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
 | (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
+
 
 ### Changelogs
 
