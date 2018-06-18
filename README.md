@@ -9,17 +9,20 @@
 
 #### New! Mobile SDK for Xamarin
 
-Use the Mobile SDK for Xamarin to code once in C#, and deliver apps in iOS and Android. 
+The Mobile SDK for Xamarin allows application developers to secure their cross-platform mobile apps with CA Mobile API Gateway.
 
-In this version, we support the [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
+In this version, we support [Xamarin MASFoundation](https://github.com/CAAPIM/Xamarin-MAS-SDK/tree/master) with these features:
 
-- Authentication and authorization, limited to:  
-  - Device Registration
-  - User log in and client credentials
+- Authentication and Authorization, limited to:  
+  - Password and client credentials flows, with device registration
   - Fingerprint session lock
-  - Single Sign-on 
-- Secure access to APIs
-- Send HTTP Requests to external APIs
+  - Single Sign-on
+- Securely access to APIs:  
+  - Request methods (GET, POST, PUT, DELETE) and Request Builder
+  - Geolocation
+  - SSL pinning
+  - Access APIS hosted in external servers
+- All SDK initialization options and advanced configuration
 
 ##### Get Started 
 
@@ -27,9 +30,12 @@ The easiest way to get the Xamarin Mobile SDK is through Visual Studio, which em
 
 Either way, here's how to [Get Started: Xamarin Mobile SDK](http://mas.ca.com/docs/xamarin/latest/guides/).
 
+#### Cordova Get Starte CLI
+
+
 ### Get SDK Updates
 
-![RSS Feed](images/RSS_Feed_Atom.png)
+![RSS Feed][/images/RSS_Feed_Atom.png]
 
 Just add these links to your favorite RSS feeder:
 - [iOS SDK](https://github.com/CAAPIM/iOS-MAS-Foundation/releases.atom)  
