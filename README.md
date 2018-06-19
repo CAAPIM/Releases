@@ -33,7 +33,7 @@ The new Cordova app CLI utility lets you create a MAS-enabled Cordova app with j
 - **mas configure** lets you add the msso_config.json file to the project
 - **mas prepare** prepares the app with these libraries: MAS-Template, MASFoundation, MASIdentity Management, MASConnecta, and MASStorage
 
-[Get the CLI](tbd)
+[Get CLI Utility](https://github.com/CAAPIM/Cordova-MAS-CLI)
 
 ### Sample Apps Have Moved
 
