@@ -11,9 +11,9 @@
 
 We've added two new APIs so you can explicitly handle authentication callbacks at the application level. For example, your app can invoke a protected endpoint without the user being logged in, or when login tokens have expired. 
 
-- Register authentication handler 
+- Register authentication handler   
   `MAS.setAuthCallbackHandler(authHandler);`
-- Deregister authentication handler. Resets callback handling to default mas-login.html file for default login page.
+- Deregister authentication handler. Resets callback handling to default mas-login.html file for default login page.  
   `MAS.removeAuthCallbackHandler();`
 
 [Cordova API](http://mas.ca.com/docs/cordova/1.7.10/sdk/MASFoundation/)
