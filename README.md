@@ -13,7 +13,7 @@ We've added two new APIs so you can explicitly handle authentication callbacks a
 
 - Register authentication handler   
   `MAS.setAuthCallbackHandler(authHandler);`
-- Deregister authentication handler. Resets callback handling to default login page.  
+- Deregister authentication handler; reset callback handling to default login page 
   `MAS.removeAuthCallbackHandler();`
 
 [Cordova API](http://mas.ca.com/docs/cordova/1.7.10/sdk/MASFoundation/)
