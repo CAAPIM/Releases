@@ -9,7 +9,7 @@
 
 #### New! Cordova Authentication Listener
 
-We've added two new APIs so you can explicitly handle authentication callbacks at the application level. For example, you can register the authentication handler method so apps can invoke a protected endpoint without the user being logged in, or when login tokens have expired. 
+We've added two new methods in the Cordova Mobile SDK that let you explicitly control authentication callbacks at the application level. For example, you can register the authentication handler method so apps can invoke a protected endpoint without the user being logged in, or when login tokens have expired. 
 
 - Register authentication handler   
   `MAS.setAuthCallbackHandler(authHandler);`
