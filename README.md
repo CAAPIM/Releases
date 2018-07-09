@@ -13,7 +13,7 @@ TBD
 
 #### Support for JSON Array Object
 
-By default, the MASRequest class now supports JSONArray object. Customization by the developer is no longer required.
+By default, the MASRequest class now supports JSONArray object. 
 
 ## Release 1.7.00
 
