@@ -1,6 +1,20 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.7.10
+
+<br>**Released**: July 16, 2018</br>
+
+### Features and Enhancements
+
+#### Single Page Login (Cordova)
+
+TBD
+
+#### Support for JSON Array Object
+
+By default, the MASRequest class now supports JSONArray object. Customization by the developer is no longer required.
+
 ## Release 1.7.00
 
 <br>**Released**: June 21, 2018</br>
