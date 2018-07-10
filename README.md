@@ -11,9 +11,9 @@
 
 We've added two new user authentication methods in the Cordova Mobile SDK that let you control authentication callbacks at the application level. Use these methods when your app needs to invoke a protected endpoint without the user being logged in, or when login tokens expire.
 
-- `MAS.setAuthCallbackHandler(authHandler)`
+- `MAS.setAuthCallbackHandler(authHandler)`  
   Sets the authentication handler and overrides the default Cordova plugin behavior.
-- `MAS.removeAuthCallbackHandler()`  
+- `MAS.removeAuthCallbackHandler()`    
   Removes the authentication handler and resets callback handling to default login page.
 
 [Explicit User Authentication Handling](http://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
