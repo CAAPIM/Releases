@@ -7,16 +7,16 @@
 
 ### Features and Enhancements
 
-#### New! Cordova Authentication Listener
+#### New Cordova User Authentication Methods
 
-We've added two new methods in the Cordova Mobile SDK that let you explicitly control authentication callbacks at the application level. For example, you can register the authentication handler method so apps can invoke a protected endpoint without the user being logged in, or when login tokens have expired. 
+We've added two new user authentication methods in the Cordova Mobile SDK that let you control authentication callbacks at the application level. Use these methods when your app needs to invoke a protected endpoint without the user being logged in, or when login tokens expire.
 
-- Register authentication handler   
-  `MAS.setAuthCallbackHandler(authHandler);`
-- Deregister authentication handler; reset callback handling to default login page   
-  `MAS.removeAuthCallbackHandler();`
+- `MAS.setAuthCallbackHandler(authHandler)`
+  Sets the authentication handler and overrides the default Cordova plugin behavior.
+- `MAS.removeAuthCallbackHandler()`  
+  Removes the authentication handler and resets callback handling to default login page.
 
-[Cordova TBD](TBD)
+[Explicit User Authentication Handling](http://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
 
 #### Support for JSON Array Object
 
