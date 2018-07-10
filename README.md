@@ -16,7 +16,7 @@ We've added two new user authentication methods in the Cordova Mobile SDK that l
 - `MAS.removeAuthCallbackHandler()`    
   Removes the authentication handler and resets callback handling to default login page.
 
-[Explicit User Authentication Handling](http://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
+[Explicit User Authentication Handling](https://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
 
 #### Support for JSON Array Object
 
