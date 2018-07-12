@@ -18,6 +18,10 @@ We've added two new user authentication methods in the Cordova Mobile SDK that l
 
 For details, see [Explicit User Authentication Handling](https://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
 
+#### Support for JSON Array Object
+
+The MASRequest class now supports JSONArray object for all platforms.  
+
 ### Changelogs
 
 **iOS**
@@ -39,9 +43,6 @@ For details, see [Explicit User Authentication Handling](https://mas.ca.com/docs
 **Xamarin**
 - [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
 
-#### Support for JSON Array Object
-
-The MASRequest class now supports JSONArray object for all platforms.  
 
 ## Release 1.7.00
 
