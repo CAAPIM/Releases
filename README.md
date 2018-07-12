@@ -1,6 +1,49 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.7.10
+
+<br>**Released**: July 16, 2018</br>
+
+### Features and Enhancements
+
+#### New Cordova User Authentication Methods
+
+We've added two new user authentication methods in the Cordova Mobile SDK that let you control authentication callbacks at the application level. Use these methods when your app needs to invoke a protected endpoint without the user being logged in, or when login tokens expire.
+
+- `MAS.setAuthCallbackHandler(authHandler)`  
+  Sets the authentication handler and overrides the default Cordova plugin behavior.
+- `MAS.removeAuthCallbackHandler()`    
+  Removes the authentication handler and resets callback handling to default login page.
+
+For details, see [Explicit User Authentication Handling](https://mas.ca.com/docs/cordova/1.7.10/guides/#explicit-user-authentication-handling)
+
+#### Support for JSON Array Object
+
+The MASRequest class now supports JSONArray object for all platforms.  
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+**Cordova**
+- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
+
+
 ## Release 1.7.00
 
 <br>**Released**: June 21, 2018</br>
