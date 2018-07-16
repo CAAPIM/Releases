@@ -1,6 +1,16 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.8.00
+
+<br>**Released**: August TBD, 2018</br>
+
+### Features and Enhancements
+
+#### Secure Account Manager Storage
+
+We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. This improvement avoids account data from being easily extracted with a rooted device.
+
 ## Release 1.7.10
 
 <br>**Released**: July 16, 2018</br>
