@@ -13,6 +13,10 @@ We added encryption to the Android Account Manager Storage (AMS). Although Andro
 
 For details, see [Secure Account Manager](mas.ca.com/docs/android/latest/guides/#secure-account-manager)
 
+#### Performance Improvements
+
+In this release, we focused on improving the Mobile SDK performance through extensive testing. The good news is, we have increased the performance of the Mobile SDK by XX%. TBD.
+
 ## Release 1.7.10
 
 <br>**Released**: July 16, 2018</br>
