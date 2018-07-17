@@ -9,7 +9,7 @@
 
 #### Secure Account Manager Storage for Android
 
-We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. This improvement avoids account data from being easily extracted with a rooted device.
+We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. This improvement avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
 For details, see [Secure Account Manager](mas.ca.com/docs/android/latest/guides/#secure-account-manager)
 
