@@ -15,7 +15,12 @@ For details, see [Secure Account Manager](mas.ca.com/docs/android/latest/guides/
 
 #### Performance Improvements
 
-In this release, we focused on improving the Mobile SDK performance through extensive testing. The good news is, we have increased the performance of the Mobile SDK by XX%. TBD.
+We focused on improving the Mobile SDK performance by removing bottlenecks and optimizing resources in these key flows:
+- SDK initialization
+- User authentication
+- Business API call
+
+The good news is, we have increased the performance of the Mobile SDK by XX%. TBD.
 
 ## Release 1.7.10
 
