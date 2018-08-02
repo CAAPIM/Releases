@@ -7,6 +7,14 @@
 
 ### Features and Enhancements
 
+### Android P Now Supported
+
+As you know, Android P introduced new security features. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. For Android P details, see [Android Developers Blog](https://android-developers.googleblog.com/2018/04/protecting-users-with-tls-by-default-in.html). 
+
+Here's a summary of what you need to know about upgrading to Android P:
+
+TBD
+
 #### Secure Account Manager Storage for Android
 
 We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
