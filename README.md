@@ -9,7 +9,7 @@
 
 ### Android P Now Supported
 
-As you know, Android P introduced new security features. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. For Android P details, see [Android Developers Blog](https://android-developers.googleblog.com/2018/04/protecting-users-with-tls-by-default-in.html). 
+As you know, Android P introduced new security features. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. 
 
 Here's a summary of what you need to know about upgrading to Android P:
 
