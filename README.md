@@ -9,17 +9,33 @@
 
 ### Android P Now Supported
 
-As you know, Android P introduced new security features. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. 
+As you know, Android P introduced new security features on August 7, 2018. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. 
 
 Here's a summary of what you need to know about upgrading to Android P:
 
-TBD
+Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with Android P devices. Although the changes to Android P were substantial, the changes you need to make are minimal.
+
+#### Mobile SDK Changes
+
+**Q. What change did you make to the Mobile SDK for Android P?**<br>
+A. The key change is the new Secure Account Manager Storage (AMS). If you implemented the original AMS (and you implemented your own encryption), the Secure AMS now includes encryption. Secure AMS is the default for storing app data (device and mag identifiers) for Android P. Keys and certificates are still stored in the Android keystore. We made other changes to support Android P, but they are handled under the covers for you. </br>
+
+**Q. Is updating to Secure AMS easy? Do I have to update the msso_config.json file after upgrading to 1.8.00?**<br>
+A. Yes, there are only a few steps to implement Secure AMS. And, no you don't have to update the msso_config.json. (The Android P requirement to re-register the device is handled seamlessly for you.)</br>
+
+**Q. If I created an app using the original AMS where I implemented my own encryption, will my app still work with Android P?**<br> 
+A. Yes, your app will work "as is". However, we still recommend that you upgrade and implement Secure AMS to ensure that your app aligns with Android P encryption requirements. </br> 
+
+**Q. Does Secure AMS support SSO?**<br>
+A. Yes. Just remember that all SSO apps must use the same storage methods or SSO won't work. That is, SSO apps cannot mix different token storage methods: Android keystore, original AMS, and Secure AMS.</br>
+
+For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
 
 #### Secure Account Manager Storage for Android
 
 We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
-For details, see [Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#implement-secure-account-manager-storage).
+For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
 #### Performance Improvements
 
