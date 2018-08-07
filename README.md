@@ -9,13 +9,11 @@
 
 ### Android P Support
 
-As you know, Android P introduced new security features on August 7, 2018. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. 
-
-Here's a summary of what you need to know about upgrading to Android P:
-
-Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with Android P devices. Although the changes to Android P were substantial, the changes you need to make are minimal.
+As you know, Android P introduced new security features on August 7, 2018. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. Here's a summary of what you need to know about upgrading to Android P:
 
 #### Mobile SDK Changes
+
+Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with Android P devices. Although the changes to Android P were substantial, the changes you need to make are minimal.
 
 **Q. What change did you make to the Mobile SDK for Android P?**<br>
 A. The key change is the new Secure Account Manager Storage (AMS). If you implemented the original AMS (and you implemented your own encryption), the Secure AMS now includes encryption. Secure AMS is the default for storing app data (device and mag identifiers) for Android P. Keys and certificates are still stored in the Android keystore. We made other changes to support Android P, but they are handled under the covers for you. </br>
@@ -29,7 +27,7 @@ A. Yes, your app will work "as is". However, we still recommend that you upgrade
 **Q. Does Secure AMS support SSO?**<br>
 A. Yes. Just remember that all SSO apps must use the same storage methods or SSO won't work. That is, SSO apps cannot mix different token storage methods: Android keystore, original AMS, and Secure AMS.</br>
 
-For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
+For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p).
 
 #### Secure Account Manager Storage for Android
 
