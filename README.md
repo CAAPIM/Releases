@@ -7,7 +7,7 @@
 
 ### Features and Enhancements
 
-### Android P Now Supported
+### Android P Support
 
 As you know, Android P introduced new security features on August 7, 2018. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. 
 
