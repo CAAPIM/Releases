@@ -9,7 +9,7 @@
 
 ### Android P Support
 
-As you know, Android P introduced new security features on August 7, 2018. We had to make substantive changes to our Mobile SDK for Android, and we sent out advanced customer notification so you could prepare for these changes. Here's a summary of what you need to know about upgrading to Android P:
+Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. Here's a summary of what you need to know about upgrading to Android P.
 
 #### Mobile SDK Changes
 
@@ -31,7 +31,7 @@ For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#
 
 #### Secure Account Manager Storage for Android
 
-We added encryption to the Android Account Manager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
+We added encryption to the Android AccountManager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
 For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
