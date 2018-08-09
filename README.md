@@ -29,13 +29,13 @@ A. Yes. Just remember that all SSO apps must use the same storage methods or SSO
 
 For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p).
 
-#### Secure Account Manager Storage for Android
+### Secure Account Manager Storage for Android
 
 We added encryption to the Android AccountManager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
 For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
-#### Performance Improvements
+### Performance Improvements
 
 We focused on improving the Mobile SDK performance by removing bottlenecks and optimizing resources in these key flows:
 - SDK initialization
@@ -44,9 +44,15 @@ We focused on improving the Mobile SDK performance by removing bottlenecks and o
 
 The good news is, we have increased the performance of the Mobile SDK by XX%. TBD.
 
-#### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin, Cordova)
+### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin, Cordova)
 
 If you've implemented the user session lock/unlock feature in the MASFoundation, you should update your privacy settings as a result of Apple updates to FaceID. Although MASFoundation will not crash if you do not change the setting, user session lock/unlock will automatically fallback to the system Passcode prompt (instead of biometric local authentication). To update, add the usage string `NSFaceIDusageDescription` to **Privacy - Face ID Usage Description** in your app's info.plist. 
+
+## Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| Mobile SDK only supports HS256 algorithm for signing id_tokens | Although MAG supports HS265, RS256, and any custom algorithm, the Mobile SDK currently only supports HS256 for signing id_token. In this release, we improved the SDK so it now gracefully handles: <li>HS256where token ID is supported and a signature is validate</li>. <li>Other algorithms where signature validation is not supported (and id_tokens are not accepted and signatures fail). For example, RS256.</li> | If your current MAG/OTK implementation: <li>Uses HS256, nothing needs to be done (HS256 is the Mobile SDK default).</li> <li>-	Uses any other algorithm, developers must use ‘MAS.enableIdTokenValidation(false)` before SDK initialization.</li> |
 
 ## Release 1.7.10
 
