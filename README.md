@@ -35,15 +35,6 @@ We added encryption to the Android AccountManager Storage (AMS). Although Androi
 
 For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
-### Performance Improvements
-
-We focused on improving the Mobile SDK performance by removing bottlenecks and optimizing resources in these key flows:
-- SDK initialization
-- User authentication
-- Business API call
-
-The good news is, we have increased the performance of the Mobile SDK by XX%. TBD.
-
 ### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin, Cordova)
 
 If you've implemented the user session lock/unlock feature in the MASFoundation, you should update your privacy settings as a result of Apple updates to FaceID. Although MASFoundation will not crash if you do not change the setting, user session lock/unlock will automatically fallback to the system Passcode prompt (instead of biometric local authentication). To update, add the usage string `NSFaceIDusageDescription` to **Privacy - Face ID Usage Description** in your app's info.plist. 
