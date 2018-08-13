@@ -3,7 +3,7 @@
 
 ## Release 1.8.00
 
-<br>**Released**: August TBD, 2018</br>
+<br>**Released**: September 5, 2018</br>
 
 ### Features and Enhancements
 
