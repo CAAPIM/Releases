@@ -34,14 +34,14 @@ A. Yes, your app will work "as is". However, we still recommend that you upgrade
 A. Yes. Just remember that all SSO apps must use the same storage methods or SSO won't work. That is, SSO apps cannot mix different token storage methods: Android keystore, original AMS, and Secure AMS.</br>
 
 For details, see:
-- [Prepare for Android P - Android native](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
-- [Prepare for Android P - Xamarin-Android](mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
+- [Prepare for Android P - Android native](http://mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
+- [Prepare for Android P - Xamarin-Android](http://mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
 
 #### Secure Account Manager Storage for Android
 
 We added encryption to the Android AccountManager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
-For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
+For details, see [Add Secure Account Manager Storage](http://mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
 #### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin-iOS, Cordova)
 
@@ -119,7 +119,7 @@ We've added two new user authentication methods in the Cordova Mobile SDK that l
 - `MAS.removeAuthCallbackHandler()`    
   Removes the authentication handler and resets callback handling to default login page.
 
-For details, see [Explicit User Authentication Handling](mas.ca.com/docs/cordova/latest/guides/#explicit-user-authentication-handling)
+For details, see [Explicit User Authentication Handling](http://mas.ca.com/docs/cordova/latest/guides/#explicit-user-authentication-handling)
 
 #### Support for JSON Array Object
 
@@ -282,7 +282,7 @@ Expanding our current support for iOS Fingerprint Session lock, the Mobile SDK i
 - **Use the Mobile SDK to invoke APIs on non-CA gateways**  
 It’s a reality. You don't always have the CA API Gateway fronting all your APIs. You have other API management products already in place with APIs that are exposed directly on those products. You can now use the Mobile SDK to invoke APIs on these non-CA gateways. Extends vendor support in your APIM infrastructure.  
 
-  - [Blog: How to Make Secure Calls to APIs from External Servers](https://www.ca.com/us/developers/mas/blog/how-to-make-secure-calls-to-apis-from-external-servers.html)
+  - [Blog: How to Make Secure Calls to APIs from External Servers](http://www.ca.com/us/developers/mas/blog/how-to-make-secure-calls-to-apis-from-external-servers.html)
   - [Cordova Send HTTP Requests to External APIs](http://mas.ca.com/docs/cordova/1.6.00/guides/#send-http-requests-to-external-apis)
 
 - **JSON Web Token (JWT) to validate data recipients**  
