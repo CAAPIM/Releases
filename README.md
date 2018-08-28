@@ -15,7 +15,7 @@ The Mobile SDK supports Android P for:
 - Android native
 - Xamarin-Android
 
-Cordova is not supported in this release. Watch for updates when Apache officially releases support for Android P. 
+**Note:** Cordova is not supported in this release. Watch for updates when Apache officially releases support for Android P. 
 
 #### Mobile SDK Changes for Android P
 
@@ -43,11 +43,13 @@ We added encryption to the Android AccountManager Storage (AMS). Although Androi
 
 For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
-### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin, Cordova)
+### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin-iOS, Cordova)
 
 If you've implemented the user session lock/unlock feature in the MASFoundation, you should update your privacy settings as a result of Apple updates to FaceID. Although MASFoundation will not crash if you do not change the setting, user session lock/unlock will automatically fallback to the system Passcode prompt (instead of biometric local authentication). To update, add the usage string `NSFaceIDusageDescription` to **Privacy - Face ID Usage Description** in your app's info.plist. 
 
-### 
+### Offline Logout (iOS, Android, Xamarin, Cordova)
+
+The Mobile SDK now support offline log out. This new method lets you delete or keep user credentials upon error (such as server is not reachable). See Changelogs for your platform for details.
 
 ## Known Issues
 
