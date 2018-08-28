@@ -9,9 +9,15 @@
 
 ### Android P Support
 
-Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. Here's a summary of what you need to know about upgrading to Android P.
+Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. 
 
-#### Mobile SDK Changes
+The Mobile SDK supports Android P for:
+- Android native
+- Xamarin-Android
+
+Cordova is not supported in this release. Watch for updates when Apache officially releases support for Android P. 
+
+#### Mobile SDK Changes for Android P
 
 Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with Android P devices. Although the changes to Android P were substantial, the changes you need to make are minimal.
 
@@ -27,7 +33,9 @@ A. Yes, your app will work "as is". However, we still recommend that you upgrade
 **Q. Does Secure AMS support SSO?**<br>
 A. Yes. Just remember that all SSO apps must use the same storage methods or SSO won't work. That is, SSO apps cannot mix different token storage methods: Android keystore, original AMS, and Secure AMS.</br>
 
-For details, see [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p).
+For details, see:
+- [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
+- [Prepare for Android P](mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
 
 ### Secure Account Manager Storage for Android
 
@@ -38,6 +46,8 @@ For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/la
 ### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin, Cordova)
 
 If you've implemented the user session lock/unlock feature in the MASFoundation, you should update your privacy settings as a result of Apple updates to FaceID. Although MASFoundation will not crash if you do not change the setting, user session lock/unlock will automatically fallback to the system Passcode prompt (instead of biometric local authentication). To update, add the usage string `NSFaceIDusageDescription` to **Privacy - Face ID Usage Description** in your app's info.plist. 
+
+### 
 
 ## Known Issues
 
