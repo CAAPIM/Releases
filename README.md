@@ -7,7 +7,7 @@
 
 ### Features and Enhancements
 
-### Android P Support
+#### Android P Support
 
 Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. 
 
@@ -37,17 +37,17 @@ For details, see:
 - [Prepare for Android P - Android native](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
 - [Prepare for Android P - Xamarin-Android](mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
 
-### Secure Account Manager Storage for Android
+#### Secure Account Manager Storage for Android
 
 We added encryption to the Android AccountManager Storage (AMS). Although Android KeyStore is still the preferred method for token storage, this improvement adds security for devices where PIN/Lock is not available. Secure AMS avoids account data from being easily extracted with a rooted device. This feature is backward compatible with the existing AMS implementation in the Android Mobile SDK.
 
 For details, see [Add Secure Account Manager Storage](mas.ca.com/docs/android/latest/guides/#add-secure-account-manager-storage).
 
-### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin-iOS, Cordova)
+#### New Apple Face ID Setting for User Session Lock/Unlock (iOS, Xamarin-iOS, Cordova)
 
 If you've implemented the user session lock/unlock feature in the MASFoundation, you should update your privacy settings as a result of Apple updates to FaceID. Although MASFoundation will not crash if you do not change the setting, user session lock/unlock will automatically fallback to the system Passcode prompt (instead of biometric local authentication). To update, add the usage string `NSFaceIDusageDescription` to **Privacy - Face ID Usage Description** in your app's info.plist. 
 
-### Offline Logout (iOS, Android, Xamarin, Cordova)
+#### Offline Logout (iOS, Android, Xamarin, Cordova)
 
 The Mobile SDK now support offline log out. This new method lets you delete or keep user credentials upon error (such as server is not reachable). See Changelogs for your platform for details.
 
@@ -77,7 +77,7 @@ The Mobile SDK now support offline log out. This new method lets you delete or k
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
-## Known Issues
+### Known Issues
 
 | Issue or Limitation                      | Description                              | Workaround                               |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
