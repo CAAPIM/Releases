@@ -51,11 +51,58 @@ If you've implemented the user session lock/unlock feature in the MASFoundation,
 
 The Mobile SDK now support offline log out. This new method lets you delete or keep user credentials upon error (such as server is not reachable). See Changelogs for your platform for details.
 
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.8, 1.7, 1.6                        |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.8, 1.7, 1.6, 1.5, 1.4              |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.8, 1.7, 1.6, 1.3                   |
+| 3.2                   | 3.5                             | 9.1            | 1.8, 1.7, 1.6, 1.2                   |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 11.0</li>                |
+| Android  | <li>4.4.2 through 9</li>                 |
+| Cordova  | <li>7.0.1, 7.10, and 8.0.0 </li>         |
+| Xamarin  | <li>(iOS) 9.0 through 11.0</li><li>(Android) 4.4.2 through 9.0</li> |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
+
 ## Known Issues
 
 | Issue or Limitation                      | Description                              | Workaround                               |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | Mobile SDK only supports HS256 algorithm for signing id_tokens | Although MAG supports HS265, RS256, and any custom algorithm, the Mobile SDK currently only supports HS256 for signing id_token. In this release, we improved the SDK so it now handles: <li>HS256 where token ID is supported and a signature is validated.</li> <li>Other algorithms where signature validation is not supported (and id_tokens are not accepted and signatures fail). For example, RS256.</li> | If your current MAG/OTK implementation: <li> **Uses HS256**, nothing needs to be done.</li> <li>**Uses any other algorithm,** you can skip signature validation on the client side. For workaround, see Troubleshooting, Error: JWT token not valid for your platform.</li> |
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+**Cordova**
+- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
 
 ## Release 1.7.10
 
