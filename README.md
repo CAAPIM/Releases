@@ -34,8 +34,8 @@ A. Yes, your app will work "as is". However, we still recommend that you upgrade
 A. Yes. Just remember that all SSO apps must use the same storage methods or SSO won't work. That is, SSO apps cannot mix different token storage methods: Android keystore, original AMS, and Secure AMS.</br>
 
 For details, see:
-- [Prepare for Android P](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
-- [Prepare for Android P](mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
+- [Prepare for Android P - Android native](mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
+- [Prepare for Android P - Xamarin-Android](mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
 
 ### Secure Account Manager Storage for Android
 
