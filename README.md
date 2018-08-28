@@ -35,7 +35,7 @@ A. Yes. Just remember that all SSO apps must use the same storage methods or SSO
 
 For details, see:
 - [Prepare for Android P - Android native](http://mas.ca.com/docs/android/latest/guides/#prepare-for-android-p)
-- [Prepare for Android P - Xamarin-Android](http://mas.ca.com/docs/docs/xamarin/latest/guides/android/#prepare-for-android-p)
+- [Prepare for Android P - Xamarin-Android](http://mas.ca.com/docs/docs/latest/xamarin/guides/android/#prepare-for-android-p)
 
 #### Secure Account Manager Storage for Android
 
