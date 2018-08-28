@@ -15,7 +15,7 @@ The Mobile SDK supports Android P for:
 - Android native
 - Xamarin-Android
 
-**Note:** Cordova is not supported in this release. But, you can start preparing for [Android P for Cordova](http://mas.ca.com/docs/cordova/latest/guides/android/#prepare-for-android-p). Watch for updates when Apache officially releases support for Android P. 
+**Note:** Cordova is not supported in this release. But, you can start preparing for [Android P for Cordova](http://mas.ca.com/docs/cordova/latest/guides/#prepare-for-android-p). Watch for updates when Apache officially releases support for Android P. 
 
 #### Mobile SDK Changes for Android P
 
