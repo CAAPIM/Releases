@@ -51,6 +51,10 @@ If you've implemented the user session lock/unlock feature in the MASFoundation,
 
 The Mobile SDK now support offline log out. This new method lets you delete or keep user credentials upon error (such as server is not reachable). See Changelogs for your platform for details.
 
+#### Performance Improvements (iOS)
+
+The Mobile SDK for iOS improves performance during the initial device registration process and the geolocation data collection process.
+
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
