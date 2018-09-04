@@ -51,6 +51,10 @@ If you've implemented the user session lock/unlock feature in the MASFoundation,
 
 The Mobile SDK now support offline log out. This new method lets you delete or keep user credentials upon error (such as server is not reachable). See Changelogs for your platform for details.
 
+#### Performance Improvements (iOS)
+
+The Mobile SDK for iOS improves performance during the initial device registration process and the geolocation data collection process.
+
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
@@ -81,7 +85,7 @@ The Mobile SDK now support offline log out. This new method lets you delete or k
 
 | Issue or Limitation                      | Description                              | Workaround                               |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Mobile SDK only supports HS256 algorithm for signing id_tokens | Although MAG supports HS265, RS256, and any custom algorithm, the Mobile SDK currently only supports HS256 for signing id_token. In this release, we improved the SDK so it now handles: <li>HS256 where token ID is supported and a signature is validated.</li> <li>Other algorithms where signature validation is not supported (and id_tokens are not accepted and signatures fail). For example, RS256.</li> | If your current MAG/OTK implementation: <li> **Uses HS256**, nothing needs to be done.</li> <li>**Uses any other algorithm,** you can skip signature validation on the client side. For workaround, see Troubleshooting, Error: JWT token not valid for your platform.</li> |
+| Mobile SDK only supports HS256 algorithm for signing id_tokens | Although MAG supports HS265, RS256, and any custom algorithm, the Mobile SDK currently only supports HS256 for signing id_token. In this release, we improved the SDK so it now handles: <li>HS256 where token ID is supported and a signature is validated.</li> <li>Other algorithms where signature validation is not supported (and id_tokens are not accepted and signatures fail). For example, RS256.</li> | If your current MAG/OTK implementation: <li> **Uses HS256**, nothing needs to be done.</li> <li>**Uses any other algorithm,** you can skip signature validation on the client side. For workaround, see Troubleshooting, "Error: JWT token not valid".</li> |
 
 ### Changelogs
 
