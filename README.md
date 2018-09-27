@@ -1,6 +1,28 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.9.00
+
+<br>**Released**: December 3, 2018</br>
+
+### Features and Enhancements
+
+#### JWT Access Token Support
+
+The JWT access token is now supported by the CA Mobile API Gateway. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
+
+#### iOS 12 Support
+#### Create Custom Device Attributes
+#### Xamarin Support for Mobile Developer Console (MDC)
+#### Samsung SDS 1.0 Support
+#### Upload Large Files over HTTP
+#### Enhanced Proximity Login QR Code (Cordova)
+#### 
+
+### Deprecation Notice
+
+In this release, MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation.
+
 ## Release 1.8.00
 
 <br>**Released**: September 5, 2018</br>
