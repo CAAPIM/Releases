@@ -15,13 +15,13 @@ The JWT access token is now supported by the CA Mobile API Gateway. For more inf
 #### Create Custom Device Attributes
 #### Xamarin Support for Mobile Developer Console (MDC)
 #### Samsung SDS 1.0 Support
-#### Upload Large Files over HTTP
+#### Upload Large Files over HTTP (multi-part form data)
 #### Enhanced Proximity Login QR Code (Cordova)
-#### 
+#### IMproved Documentation (Swift and Blueprints)
 
 ### Deprecation Notice
 
-In this release, MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation.
+In this release, MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for storage on local devices is still supported.
 
 ## Release 1.8.00
 
