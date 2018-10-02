@@ -23,6 +23,33 @@ The JWT access token is now supported by the CA Mobile API Gateway. For more inf
 
 In this release, MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for storage on local devices is still supported.
 
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2                   | 4.3                             | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.9. 1.8, 1.7, 1.6, 1.3              |
+| 3.2                   | 3.5                             | 9.1            | 1.9, 1.8, 1.7, 1.6, 1.2              |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 12.0</li>                |
+| Android  | <li>4.4.2 through 9</li>                 |
+| Cordova  | <li>7.0.1, 7.10, and 8.0.0 </li>         |
+| Xamarin  | <li>(iOS) 9.0 through 12.0</li><li>(Android) 4.4.2 through 9.0</li> |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
+
 ## Release 1.8.00
 
 <br>**Released**: September 5, 2018</br>
