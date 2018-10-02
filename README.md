@@ -27,7 +27,7 @@ In this release, MASStorage for Cloud documentation has been removed from the Mo
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
 | --------------------- | ------------------------------- | -------------- | ------------------------------------ |
-| 4.2                   | 4.3                             | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.2                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
 | 4.1                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
 | 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
 | 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.9. 1.8, 1.7, 1.6, 1.3              |
