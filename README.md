@@ -17,7 +17,7 @@ The JWT access token is now supported by the CA Mobile API Gateway. For more inf
 #### Samsung SDS 1.0 Support
 #### Upload Large Files over HTTP (multi-part form data)
 #### Enhanced Proximity Login QR Code (Cordova)
-#### IMproved Documentation (Swift and Blueprints)
+#### Improved Documentation (Swift and Blueprints)
 
 ### Deprecation Notice
 
