@@ -19,9 +19,10 @@ The JWT access token is now supported by the CA Mobile API Gateway. For more inf
 #### Enhanced Proximity Login QR Code (Cordova)
 #### Improved Documentation (Swift and Blueprints)
 
-### Deprecation Notice
+### Deprecation Notices
 
-In this release, MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for storage on local devices is still supported.
+- MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for storage on local devices is still supported.
+- PASS SDK for Android is not longer supported for fingerprint recognition. Use the standard Fingerprint Session Lock/Unlock feature.
 
 ### Product Compatibility
 
@@ -49,6 +50,16 @@ In this release, MASStorage for Cloud documentation has been removed from the Mo
 | Xamarin  | <li>(iOS) 9.0 through 12.0</li><li>(Android) 4.4.2 through 9.0</li> |
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| (MCT-177: All SDKs) Social login limitation | The current social login implementation supports user profiles. The Mobile SDK libraries MASIdentity (Users and Groups) and MASConnecta (Messaging/Pub/Sub) do not support social login. | To integrate social login with an Identity Provider (for example, LDAP), you must create a custom policy. Contact Services for help with customizing policies for IDPs. |
+| (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
+
 
 ## Release 1.8.00
 
