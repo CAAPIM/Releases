@@ -12,23 +12,32 @@
 The JWT access token is now supported by the CA Mobile API Gateway. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
 
 #### iOS 12 Support
+The iOS Mobile SDK supports iOS version 12.
+
 #### Create Custom Device Attributes
+
 #### Xamarin Support for Mobile Developer Console (MDC)
-#### Samsung SDS 1.0 Support
+The MDC now supports the Xamarin workflow in the getting started wizard. 
+
+#### ProGuard Support
+The Mobile SDK for Android supports using the open source tool ProGuard that makes Android and Java apps smaller and faster.
+
+#### Samsung SDS 1.0 Support ??
 #### Upload Large Files over HTTP (multi-part form data)
 #### Enhanced Proximity Login QR Code (Cordova)
-#### Improved Documentation (Swift and Blueprints)
+#### Improved Documentation (Swift and Blueprints) ??
+#### mas device identifier??
 
 ### Deprecation Notices
 
-- MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for storage on local devices is still supported.
-- PASS SDK for Android is not longer supported for fingerprint recognition. Use the standard Fingerprint Session Lock/Unlock feature.
+- MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for local device storage is still supported.
+- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Use the Fingerprint Session Lock/Unlock feature documented in the Mobile SDK Guides. 
 
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
 | --------------------- | ------------------------------- | -------------- | ------------------------------------ |
-| 4.2                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.2                   | 4.3, 4.2                        | 9.4, 9.3       | 1.9, 1.8, 1.7, 1.6                   |
 | 4.1                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
 | 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
 | 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.9. 1.8, 1.7, 1.6, 1.3              |
@@ -58,7 +67,6 @@ The JWT access token is now supported by the CA Mobile API Gateway. For more inf
 | (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
 | Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | (MCT-177: All SDKs) Social login limitation | The current social login implementation supports user profiles. The Mobile SDK libraries MASIdentity (Users and Groups) and MASConnecta (Messaging/Pub/Sub) do not support social login. | To integrate social login with an Identity Provider (for example, LDAP), you must create a custom policy. Contact Services for help with customizing policies for IDPs. |
-| (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
 
 
 ## Release 1.8.00
