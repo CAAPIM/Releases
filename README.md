@@ -16,8 +16,8 @@ The iOS Mobile SDK supports iOS version 12.
 
 #### Create Custom Device Attributes
 
-#### Xamarin Support for Mobile Developer Console (MDC)
-The MDC now supports the Xamarin workflow in the getting started wizard. 
+#### Xamarin for Mobile Developer Console (MDC)
+The MDC user interface now includes the steps to install the Xamarin SDK.
 
 #### ProGuard Support
 The Mobile SDK for Android supports using the open source tool ProGuard that makes Android and Java apps smaller and faster.
