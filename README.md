@@ -7,31 +7,34 @@
 
 ### Features and Enhancements
 
-#### JWT Access Token Support
-
-The JWT access token is now supported by the CA Mobile API Gateway. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
-
 #### iOS 12 Support
 The iOS Mobile SDK supports iOS version 12.
 
 #### Create Custom Device Attributes
 
 #### Xamarin for Mobile Developer Console (MDC)
-The MDC user interface now includes the steps to install the Xamarin SDK.
+The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 
-#### ProGuard Support
-The Mobile SDK for Android supports using the open source tool ProGuard that makes Android and Java apps smaller and faster.
+#### ProGuard Compatibility
+The Mobile SDK for Android is compatibile with ProGuard, the open source tool used to make Android and Java apps smaller and faster.
 
+#### iOS Device Registration Redesign
+To properly handle how Apple handles device IDs during app uninstall/reinstall, we redesigned device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
+
+#### Do we add character limitation in email address in Known Issues? (hotfix item).
+#### iOS device registration
 #### Samsung SDS 1.0 Support ??
 #### Upload Large Files over HTTP (multi-part form data)
 #### Enhanced Proximity Login QR Code (Cordova)
-#### Improved Documentation (Swift and Blueprints) ??
-#### mas device identifier??
+
+#### JWT Access Token Support
+
+The JWT access token is now supported by the CA Mobile API Gateway. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
 
 ### Deprecation Notices
 
 - MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for local device storage is still supported.
-- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Use the Fingerprint Session Lock/Unlock feature documented in the Mobile SDK Guides. 
+- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Use the Fingerprint Session Lock/Unlock feature documented in the Mobile SDK for Android Guide. 
 
 ### Product Compatibility
 
