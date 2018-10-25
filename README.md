@@ -11,6 +11,16 @@
 The iOS Mobile SDK supports iOS version 12.
 
 #### Create Custom Device Attributes
+Custom device attributes let you identify and track registered devices. Storing these attributes also lets you perform your own queries like "search all devices in App A tagged with Android." Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication. You manage attributes in the Mobile SDK using add/delete/get methods, and the Admin manages the 
+
+**For developers**, see:
+- [iOS](http://mas.ca.com/docs/ios/latest/guides/#device-metadata)
+- [Android](http://mas.ca.com/docs/android/latest/guides/#device-metadata)
+- [Cordova](http://mas.ca.com/docs/cordova/latest/guides/#device-metadata)
+- [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#device-metadata)
+- [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#device-metadata)
+
+**For Admins**, see [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
 #### Xamarin for Mobile Developer Console (MDC)
 The MDC wizard now includes the high-level steps to install the Xamarin SDK.
@@ -18,18 +28,17 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 #### ProGuard Compatibility
 The Mobile SDK for Android is compatibile with ProGuard, the open source tool used to make Android and Java apps smaller and faster.
 
-#### iOS Device Registration Redesign
-To properly handle how Apple handles device IDs during app uninstall/reinstall, we redesigned device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
+#### iOS Device Registration Improvment
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
 
-#### Do we add character limitation in email address in Known Issues? (hotfix item).
-#### iOS device registration
 #### Samsung SDS 1.0 Support ??
 #### Upload Large Files over HTTP (multi-part form data)
-#### Enhanced Proximity Login QR Code (Cordova)
+
+#### RS256 Support
+The Mobile SDK now supports the RS256 algorithm, increasing support beyond HS256 in previous releases.
 
 #### JWT Access Token Support
-
-The JWT access token is now supported by the CA Mobile API Gateway. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
+The JWT access token is now supported by MAG. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
 
 ### Deprecation Notices
 
