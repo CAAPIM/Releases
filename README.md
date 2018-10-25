@@ -31,7 +31,6 @@ The Mobile SDK for Android is compatibile with ProGuard, the open source tool us
 #### iOS Device Registration Improvment
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
 
-#### Samsung SDS 1.0 Support ??
 #### Upload Large Files over HTTP (multi-part form data)
 
 #### RS256 Support
