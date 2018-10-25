@@ -34,7 +34,7 @@ To support how Apple handles device IDs during app uninstall/reinstall, we redes
 #### Upload Large Files over HTTP (multi-part form data)
 
 #### RS256 Support
-The Mobile SDK now supports the RS256 algorithm for JWT token validation, increasing support beyond HS256 in previous releases.
+The Mobile SDK supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
 
 #### JWT Access Token Support
 The JWT access token is now supported by MAG. For more information, see [Token Configuration] (https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
