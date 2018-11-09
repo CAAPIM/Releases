@@ -69,6 +69,7 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 | Cordova  | <li>7.0.1, 7.10, and 8.0.0 </li>         |
 | Xamarin  | <li>(iOS) 9.0 through 12.0</li><li>(Android) 4.4.2 through 9.0</li> |
 
+**Note**: The Mobile SDK for Android is compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.
 
 ### Known Issues
