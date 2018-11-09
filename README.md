@@ -26,7 +26,7 @@ Custom device attributes let you identify and track registered devices. Storing 
 The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 
 #### ProGuard Compatibility
-The Mobile SDK for Android is compatibile with ProGuard, the open source tool used to make Android and Java apps smaller and faster.
+The Mobile SDK for Android is compatibile with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
 #### iOS Device Registration Improvement
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
