@@ -31,8 +31,6 @@ The Mobile SDK for Android is compatibile with ProGuard, the open source tool th
 #### iOS Device Registration Improvement
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
 
-#### Upload Large Files over HTTP (multi-part form data)
-
 #### RS256 Support
 The Mobile SDK supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
 
@@ -40,7 +38,6 @@ The Mobile SDK supports the RS256 algorithm for validating signatures of id toke
 The JWT access token is now supported by MAG. For more information, see [Token Configuration](https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
 
 ### Deprecation Notices
-
 - MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for local device storage is still supported.
 - The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Use the Fingerprint Session Lock/Unlock feature documented in the Mobile SDK for Android Guide. 
 
