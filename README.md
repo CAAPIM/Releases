@@ -13,7 +13,7 @@ The iOS Mobile SDK supports iOS version 12.
 #### Create Custom Device Attributes
 Custom device attributes let you identify and track registered devices. Storing these attributes also lets you perform your own queries like "search all devices in App A tagged with Android." Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication. You manage attributes in the Mobile SDK using add/delete/get methods, and the Admin manages the attributes using policy and APIs. 
 
-**For developers**, see:
+**For developers**, see Device Metadata:
 - [iOS](http://mas.ca.com/docs/ios/latest/guides/#device-metadata)
 - [Android](http://mas.ca.com/docs/android/latest/guides/#device-metadata)
 - [Cordova](http://mas.ca.com/docs/cordova/latest/guides/#device-metadata)
