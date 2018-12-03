@@ -54,7 +54,8 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 `*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
 
-**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+**Note**: All minor versions (CRs) are supported as part of the major release.
+
 **Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
 
 ### SDK Platform Support
