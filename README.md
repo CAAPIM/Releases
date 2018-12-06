@@ -26,10 +26,10 @@ Custom device attributes let you identify and track registered devices. Storing 
 The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 
 #### ProGuard Compatibility
-The Mobile SDK for Android is compatibile with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
+The Mobile SDK for Android is compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
 #### iOS Device Registration Improvement
-To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors, and allows SSO between apps that use different bundle identifiers.
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors and allows SSO between apps that use different bundle identifiers.
 
 #### RS256 Support
 The Mobile SDK supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
@@ -75,7 +75,7 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 | Issue or Limitation                      | Description                              | Workaround                               |
 | :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | DE388462: Special characters in email addresses | MAG, OTK, and the Mobile SDK supports special characters in email addresses as noted in the RFC 1779. However, the MAG and OTK do not support the following characters: & \| | None.                                    |
-| US466920: All SDKs Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered with or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| US466920: All SDKs Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an unsupported version of the platform, or they have tampered with or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
 | Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | MCT-177: All SDKs Social login limitation | The current social login implementation supports user profiles. The Mobile SDK libraries MASIdentity (Users and Groups) and MASConnecta (Messaging/Pub/Sub) do not support social login. | To integrate social login with an Identity Provider (for example, LDAP), you must create a custom policy. Contact Services for help with customizing policies for IDPs. |
 
@@ -108,7 +108,7 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 
 #### Android P Support
 
-Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. 
+Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification, so you could prepare for these changes. 
 
 The Mobile SDK supports Android P for:
 - Android native
@@ -322,7 +322,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 
 | Issue or Limitation                      | Description                              | Workaround                               |
 | :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an unsupported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
 | Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | (MCT-177: All SDKs) Social login limitation | The social login feature of the Mobile SDK does not work if you have installed the Mobile App Services (MAS) solution kit. | Contact Services for help with customizing policies for IDPs. |
 | (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                    |
