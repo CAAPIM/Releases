@@ -8,10 +8,10 @@
 ### Features and Enhancements
 
 #### iOS 12 Support
-The iOS Mobile SDK supports iOS version 12.
+The iOS and Xamarin-iOS SDKs now supports iOS version 12.
 
 #### Create Custom Device Attributes
-We've improved device management with the ability to create custom device attributes (nicknames) for devices. This feature makes it easier for end users to identify and track different devices in your UIs. Also, stored attributes can be used for troubleshooting queries ("search all devices in App A tagged with Android") and data analysis. Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication.  
+We've improved device registration with the ability to create custom device attributes (nicknames) for devices. This feature makes it easier for end users to identify and track different devices in your UIs. Also, stored attributes can be used for troubleshooting queries ("search all devices in App A tagged with Android") and data analysis. Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication.  
 
 **Developers** manage custom device attributes in the Mobile SDK using add/delete/get methods. 
 - [iOS](http://mas.ca.com/docs/ios/latest/guides/#create-custom-device-attributes)
