@@ -30,7 +30,7 @@ Introducing updated documentation for Social Login. The new blueprint format hel
 #### iOS Device Registration Improvement
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. The redesign extends the existing intra-group app sharing to cross-group app sharing for Single Sign-On (SSO). Also, it further minimizes "Device is already registered" errors. 
 
-See "Single Sign-On (SSO):
+See "Single Sign-On (SSO)":
 - [iOS](http://mas.ca.com/docs/ios/latest/guides)
 - [Xamarin-iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios)
 
