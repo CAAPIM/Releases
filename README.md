@@ -11,8 +11,11 @@
 The iOS Mobile SDK supports iOS version 12.
 
 #### Create Custom Device Attributes
-Custom device attributes let you identify and track registered devices. Storing these attributes also lets you perform your own queries like "search all devices in App A tagged with Android." Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication. You manage attributes in the Mobile SDK using add/delete/get methods, and the Admin manages the attributes using policy and APIs. 
+We've improved device management with the ability to create custom device attributes (nicknames) for devices. This feature makes it easier for end users to identify and track different devices in your UIs. Also, stored attributes can be used for troubleshooting queries ("search all devices in App A tagged with Android") and data analysis. Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication.  
 
+Admins have a new MAG hash policy and APIs for creating custom device attributes. For details, see: [Custom Device Attributes](https://docops.ca.com/display/MAG/.Create+Custom+Device+Attributes+v4.2)
+
+Developers manage device attributes in the Mobile SDK using add/delete/get methods. 
 **For developers**:
 - [iOS](http://mas.ca.com/docs/ios/latest/guides/#create-custom-device-attributes)
 - [Android](http://mas.ca.com/docs/android/latest/guides/#create-custom-device-attributes)
@@ -28,7 +31,10 @@ Introducing updated documentation for Social Login. The new blueprint format hel
 [Social Login Blueprint](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/social-login-blueprint)
 
 #### iOS Device Registration Improvement
-To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. The redesign extends the existing intra-group app sharing to cross-group app sharing for Single Sign-On (SSO). Also, it further minimizes "Device is already registered" errors. 
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. As a result, you'll find these significant improvements: 
+- Extends the existing SSO intra-group app sharing (bundle identifier) to cross-group app sharing with a new keychain group identifier
+- Allows SSO between iOS apps and widgets
+- Further minimizes "Device is already registered" errors
 
 See "Single Sign-On (SSO)":
 - [iOS](http://mas.ca.com/docs/ios/latest/guides)
