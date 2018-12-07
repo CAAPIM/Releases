@@ -29,7 +29,7 @@ Introducing updated documentation for Social Login. The new blueprint format hel
 
 #### iOS Device Registration Improvement
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. As a result, you'll find these significant improvements: 
-- Extends the existing SSO intra-group app sharing (bundle identifier) to cross-group app sharing with a new keychain group identifier
+- Extends the existing SSO intra-group app sharing (bundle identifier) to allow cross-group app sharing by adding a new keychain group identifier
 - Allows SSO between iOS apps and widgets
 - Further minimizes "Device is already registered" errors
 
