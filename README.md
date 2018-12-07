@@ -22,12 +22,12 @@ We've improved device registration with the ability to create custom device attr
 
 **Admins** have a new MAG hash policy and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
-#### Social Login Blueprint
+#### New Social Login Blueprint
 Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Would you like to see more blueprints? Send us your feedback.
 
 [Social Login Blueprint](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/social-login-blueprint)
 
-#### iOS Device Registration Improvement
+#### Improved iOS Device Registration
 To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. As a result, you'll find these significant improvements: 
 - Extends the existing SSO intra-group app sharing (bundle identifier) to allow cross-group app sharing by adding a new keychain group identifier
 - Allows SSO between iOS apps and widgets
