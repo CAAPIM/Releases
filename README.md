@@ -29,7 +29,11 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 The Mobile SDK for Android is compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
 #### iOS Device Registration Improvement
-To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign further minimizes "Device is already registered" errors and allows SSO between apps that use different bundle identifiers.
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign extends the existing intra-group app sharing to cross-group sharing for Single Sign-On (SSO). Also, it further minimizes "Device is already registered" errors. 
+
+See "Single Sign-On (SSO):
+- [iOS](http://mas.ca.com/docs/ios/latest/guides/#device-metadata)
+- [Xamarin - iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios)
 
 #### RS256 Support
 The Mobile SDK supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
