@@ -23,7 +23,7 @@ We've improved device management with the ability to create custom device attrib
 **Admins** have a new MAG hash policy and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
 #### Social Login Blueprint
-Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Do you want more blueprints? We want your feedback.
+Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Do you want more blueprints? Send us your feedback.
 
 [Social Login Blueprint](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/social-login-blueprint)
 
