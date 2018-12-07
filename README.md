@@ -13,17 +13,14 @@ The iOS Mobile SDK supports iOS version 12.
 #### Create Custom Device Attributes
 We've improved device management with the ability to create custom device attributes (nicknames) for devices. This feature makes it easier for end users to identify and track different devices in your UIs. Also, stored attributes can be used for troubleshooting queries ("search all devices in App A tagged with Android") and data analysis. Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication.  
 
-Admins have a new MAG hash policy and APIs for creating custom device attributes. For details, see: [Custom Device Attributes](https://docops.ca.com/display/MAG/.Create+Custom+Device+Attributes+v4.2)
-
-Developers manage device attributes in the Mobile SDK using add/delete/get methods. 
-**For developers**:
+**Developers** manage custom device attributes in the Mobile SDK using add/delete/get methods. 
 - [iOS](http://mas.ca.com/docs/ios/latest/guides/#create-custom-device-attributes)
 - [Android](http://mas.ca.com/docs/android/latest/guides/#create-custom-device-attributes)
 - [Cordova](http://mas.ca.com/docs/cordova/latest/guides/#device-metadata)
 - [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#create-custom-device-attributes)
 - [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#create-custom-device-attributes)
 
-**For Admins**: [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes)
+**Admins** have a new MAG hash policy and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
 #### Social Login Blueprint
 Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Do you want more blueprints? We want your feedback.
