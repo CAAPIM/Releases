@@ -41,7 +41,7 @@ See "Single Sign-On (SSO)":
 The Mobile SDK now supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
 
 #### JWT Access Token Support
-The JWT access token is now supported by MAG. For more information, see [Token Configuration](https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
+MAG now supports JWT access token. For more information, see [Token Configuration](https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
 
 #### Xamarin for Mobile Developer Console (MDC)
 The MDC wizard now includes the high-level steps to install the Xamarin SDK.
