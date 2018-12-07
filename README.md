@@ -86,7 +86,7 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -96,7 +96,7 @@ The JWT access token is now supported by MAG. For more information, see [Token C
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -193,7 +193,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -203,7 +203,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -235,7 +235,7 @@ The MASRequest class now supports JSONArray object for all platforms.
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -245,7 +245,7 @@ The MASRequest class now supports JSONArray object for all platforms.
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -334,7 +334,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -344,7 +344,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -447,7 +447,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -457,7 +457,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangLlog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
