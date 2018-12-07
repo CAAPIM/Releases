@@ -14,11 +14,11 @@ The iOS Mobile SDK supports iOS version 12.
 Custom device attributes let you identify and track registered devices. Storing these attributes also lets you perform your own queries like "search all devices in App A tagged with Android." Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication. You manage attributes in the Mobile SDK using add/delete/get methods, and the Admin manages the attributes using policy and APIs. 
 
 **For developers**, see Device Metadata:
-- [iOS](http://mas.ca.com/docs/ios/latest/guides/#device-metadata)
-- [Android](http://mas.ca.com/docs/android/latest/guides/#device-metadata)
+- [iOS](http://mas.ca.com/docs/ios/latest/guides/#create-custom-device-attributes)
+- [Android](http://mas.ca.com/docs/android/latest/guides/#create-custom-device-attributes)
 - [Cordova](http://mas.ca.com/docs/cordova/latest/guides/#device-metadata)
-- [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#device-metadata)
-- [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#device-metadata)
+- [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#create-custom-device-attributes)
+- [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#create-custom-device-attributes)
 
 **For Admins**, see [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
@@ -29,11 +29,11 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 The Mobile SDK for Android is compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
 #### iOS Device Registration Improvement
-To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in iOS SDK. The redesign extends the existing intra-group app sharing to cross-group sharing for Single Sign-On (SSO). Also, it further minimizes "Device is already registered" errors. 
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. The redesign extends the existing intra-group app sharing to cross-group app sharing for Single Sign-On (SSO). Also, it further minimizes "Device is already registered" errors. 
 
 See "Single Sign-On (SSO):
-- [iOS](http://mas.ca.com/docs/ios/latest/guides/#device-metadata)
-- [Xamarin - iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios)
+- [iOS](http://mas.ca.com/docs/ios/latest/guides)
+- [Xamarin-iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios)
 
 #### RS256 Support
 The Mobile SDK supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
