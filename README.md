@@ -50,7 +50,6 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 The Mobile SDK for Android is now compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
 ### Deprecation Notices
-- MASStorage for Cloud documentation has been removed from the Mobile SDK 1.8.00 and MAG 4.2.00 documentation. MASStorage for local device storage is still supported.
 - The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Instead, use the [Fingerprint Session Lock/Unlock](http://mas.ca.com/docs/android/latest/guides/#fingerprint-sessions-lock) feature.
 
 ### Product Compatibility
