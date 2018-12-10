@@ -1,6 +1,117 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.9.00
+
+<br>**Released**: December 13, 2018</br>
+
+### Features and Enhancements
+
+#### iOS 12 Support
+The iOS and Xamarin-iOS SDKs now support iOS version 12.
+
+#### Create Custom Device Attributes
+We've improved device registration with the ability to create custom device attributes (nicknames) for devices. This feature makes it easier for end users to identify and track different devices in your UIs. Also, stored attributes can be used for troubleshooting queries ("search all devices in App A tagged with Android") and data analysis. Examples of useful custom device attributes are: alias, model, version, keys for encryption signing, and fingerprint authentication.  
+
+**Developers** manage custom device attributes in the Mobile SDK using add/delete/get methods. 
+- [iOS](http://mas.ca.com/docs/ios/latest/guides/#create-custom-device-attributes)
+- [Android](http://mas.ca.com/docs/android/latest/guides/#create-custom-device-attributes)
+- [Cordova](http://mas.ca.com/docs/cordova/latest/guides/#device-metadata)
+- [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#create-custom-device-attributes)
+- [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#create-custom-device-attributes)
+
+**Admins** have a new MAG hash policy and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
+
+#### New Social Login Blueprint
+Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Would you like to see more blueprints? Send us your feedback.
+
+[Social Login Blueprint](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/social-login-blueprint)
+
+#### Improved iOS Device Registration
+To support how Apple handles device IDs during app uninstall/reinstall, we redesigned the device registration in the iOS SDKs. As a result, you'll find these significant improvements: 
+- Extends the existing SSO intra-group app sharing (bundle identifier) to allow cross-group app sharing by adding a new keychain group identifier
+- Allows SSO between iOS apps and widgets
+- Further minimizes "Device is already registered" errors
+
+See "Single Sign-On (SSO)":
+- [iOS](http://mas.ca.com/docs/ios/latest/guides)
+- [Xamarin-iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios)
+
+#### RS256 Support
+The Mobile SDK now supports the RS256 algorithm for validating signatures of id tokens. In previous releases, only HS256 was supported.
+
+#### JWT Access Token Support
+MAG now supports JWT access token. For more information, see [Token Configuration](https://docops.ca.com/ca-api-management-oauth-toolkit/4-3/en/installation-workflow/configure-authentication/token-configuration).
+
+#### Xamarin for Mobile Developer Console (MDC)
+The MDC wizard now includes the high-level steps to install the Xamarin SDK.
+
+#### ProGuard Compatibility
+The Mobile SDK for Android is now compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
+
+### Deprecation Notices
+- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Instead, use the [Fingerprint Session Lock/Unlock](http://mas.ca.com/docs/android/latest/guides/#fingerprint-sessions-lock) feature.
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2                   | 4.3, 4.2                        | 9.4, 9.3       | 1.9, 1.8, 1.7, 1.6                   |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.9. 1.8, 1.7, 1.6, 1.3              |
+| 3.2                   | 3.5                             | 9.1            | 1.9, 1.8, 1.7, 1.6, 1.2              |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 12.0</li>                |
+| Android  | <li>4.4.2 through 9</li>                 |
+| Cordova  | <li>7.0.1, 7.10, and 8.0.0 </li>         |
+| Xamarin  | <li>(iOS) 9.0 through 12.0</li><li>(Android) 4.4.2 through 9.0</li> |
+
+**Note**: The Mobile SDK for Android is compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.<br>
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| DE388462: Special characters in email addresses | MAG, OTK, and the Mobile SDK supports special characters in email addresses as noted in the RFC 1779. However, the MAG and OTK do not support the following characters: & \| | None.                                    |
+| US466920: All SDKs Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an unsupported version of the platform, or they have tampered with or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
+| MCT-177: All SDKs Social login limitation | The current social login implementation supports user profiles. The Mobile SDK libraries MASIdentity (Users and Groups) and MASConnecta (Messaging/Pub/Sub) do not support social login. | To integrate social login with an Identity Provider (for example, LDAP), you must create a custom policy. Contact Services for help with customizing policies for IDPs. |
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+**Cordova**
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
+
 ## Release 1.8.00
 
 <br>**Released**: September 5, 2018</br>
@@ -9,7 +120,7 @@
 
 #### Android P Support
 
-Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification so you could prepare for these changes. 
+Android P was released August 7, 2018 with new security features. We made substantive changes to our Mobile SDK for Android P, and we sent out advanced customer notification, so you could prepare for these changes. 
 
 The Mobile SDK supports Android P for:
 - Android native
@@ -93,7 +204,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -103,7 +214,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -135,7 +246,7 @@ The MASRequest class now supports JSONArray object for all platforms.
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -145,7 +256,7 @@ The MASRequest class now supports JSONArray object for all platforms.
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -226,7 +337,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 
 | Issue or Limitation                      | Description                              | Workaround                               |
 | :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an supported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
+| (US466920: All SDKs) Errors on specific devices | If you have unexplained or intermittent SDK errors that occur only on specific devices, environments or settings, it may be because users are using an unsupported version of the platform, or they have tampered or customized the device. The Mobile SDK is tested only on devices using official platform versions.  When devices are tampered with or customized, the SDK can behave in unexpected ways. | Check that users are using a supported version for their platform. Next, verify that users have not jailbroken or unlocked the OS (iOS), or customized the device ROM (Android). If either case is true, users should upgrade to a supported version of their platform. |
 | Request with client certificate on HTTP 403 fails | If the MAG/OTK is configured to generate an HTTP 403 error, and the client certificate is configured for mutual SSL, the Apple Transport Layer determines that the certificate is bad and kills the entire transaction with the following error: `FAILED: Error Domain=NSURLErrorDomain Code=-1206 "The server “our.server.here” requires a client certificate.` | Developers can workaround the bug in their app, or Admins can change all HTTP status codes from 403 to another status code. |
 | (MCT-177: All SDKs) Social login limitation | The current social login implementation supports user profiles. The Mobile SDK libraries MASIdentity (Users and Groups) and MASConnecta (Messaging/Pub/Sub) do not support social login. | To integrate social login with an Identity Provider (for example, LDAP), you must create a custom policy. Contact Services for help with customizing policies for IDPs. |
 | (DE355995) JWT access token generation and validation | Although OTK supports issuing and validating UUID and JWT access tokens, the JWT access token is not currently supported by the CA Mobile API Gateway. | None.                                                      |
@@ -234,7 +345,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -244,7 +355,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
@@ -347,7 +458,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 ### Changelogs
 
 **iOS**
-- MASFoundation: [Changelog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
 - MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
 - MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
 - MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
@@ -357,7 +468,7 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 - [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
 
 **Cordova**
-- Cordova-MAS-Foundation: [Changelog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Foundation: [ChangLlog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
 - Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
 - Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
 - Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
