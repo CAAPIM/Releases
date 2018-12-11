@@ -49,9 +49,6 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 #### ProGuard Compatibility
 The Mobile SDK for Android is now compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
-### Deprecation Notices
-- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Instead, use the [Fingerprint Session Lock/Unlock](http://mas.ca.com/docs/android/latest/guides/#fingerprint-sessions-lock) feature.
-
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
