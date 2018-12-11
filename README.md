@@ -20,7 +20,7 @@ We've improved device registration with the ability to create custom device attr
 - [Xamarin Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#create-custom-device-attributes)
 - [Xamarin iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#create-custom-device-attributes)
 
-**Admins** have a new MAG hash policy and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
+**Admins** must configure the feature (fror example, max number of attributes) and APIs for creating custom device attributes. See [Create Custom Device Attributes](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/create-custom-device-attributes).
 
 #### New Social Login Blueprint
 Introducing updated documentation for Social Login. The new blueprint format helps Developers and Admins understand the key tasks and handoffs to ensure successful implementation. Would you like to see more blueprints? Send us your feedback.
@@ -49,9 +49,6 @@ The MDC wizard now includes the high-level steps to install the Xamarin SDK.
 #### ProGuard Compatibility
 The Mobile SDK for Android is now compatible with ProGuard, the open source tool that makes Android and Java apps smaller and faster.
 
-### Deprecation Notices
-- The Samsung Pass SDK for Android is no longer supported for fingerprint recognition. Instead, use the [Fingerprint Session Lock/Unlock](http://mas.ca.com/docs/android/latest/guides/#fingerprint-sessions-lock) feature.
-
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
@@ -67,7 +64,7 @@ The Mobile SDK for Android is now compatible with ProGuard, the open source tool
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
 
 ### SDK Platform Support
 
