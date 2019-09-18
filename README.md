@@ -17,7 +17,9 @@ We made substantive changes to our Mobile SDK for iOS 13, and we sent out advanc
 #### Mobile SDK Changes for iOS 13
 Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with iOS 13 devices. Although the changes to iOS 13 were substantial, the changes you need to make are minimal.</br>
 **Q. What change did you make to the Mobile SDK for iOS 13?** </br>
-**A**. The key change is that CA Mobile SDK 1.9.20 introduces new error handling that handles the Null object for the ASN.1 Bit String Tag. On iOS 13, the ASN.1 decoder has an empty sub content for ASN.1 Bit String Tag. This causes a Null Pointer exception and crashes the Mobile app.</br>      
+**A**. The key change is that CA Mobile SDK 1.9.20 introduces new error handling that handles the Null object for the ASN.1 Bit String Tag. On iOS 13, the ASN.1 decoder has an empty sub content for ASN.1 Bit String Tag. This causes a Null Pointer exception and crashes the Mobile app. </br>
+**Q. What version of SDK and function are impacted by the error with iOS 13?** </br>
+**A**. The crash happens during device registration when handling the certificate parsing. This problem doesn’t impact SDK 1.7 and older because a different library was used for certificate parsing. However, we are not running full qualification test on older versions of SDK with later versions of iOS, thus we are not officially adding any new iOS versions to SDK 1.7 platform support chart. </br>      
 In order to make your app compatible with the latest iOS version, you will be required to upgrade to CA Mobile SDK 1.9.20
 For details, see:
 - [Prepare for iOS 13 - iOS native](http://mas.ca.com/docs/ios/1.9.00/guides/#prepare-for-ios-13)
