@@ -1,6 +1,69 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 1.9.20
+
+<br>**Released**: September 18, 2019</br>
+
+### Features and Enhancements
+
+#### iOS 13 Support
+We understand that Apple is expecting to announce the official release of iOS 13 in September, 2019. During the past few months, our team has been working with Apple’s beta releases, assessing the impact to our CA Mobile SDK for iOS, as well as the impact to dependent hybrid platforms: Xamarin® and Cordova™. Unfortunately, we have identified that the new version of iOS will cause core functionality from our SDK to stop working as expected. This means that users who update their device to iOS 13 will encounter problems with mobile apps built using CA Mobile SDK 1.9.10 and older
+We made substantive changes to our Mobile SDK for iOS 13, and we sent out advanced customer notification, so you could prepare for these changes.</br>
+#### The Mobile SDK 1.9.20 supports iOS 13 for:
+- iOS native
+
+**Note**: iOS 13 for Cordova and Xamarin are not supported in this release. 
+#### Mobile SDK Changes for iOS 13
+Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with iOS 13 devices. Although the changes to iOS 13 were substantial, the changes you need to make are minimal.</br>
+**Q. What change did you make to the Mobile SDK for iOS 13?** </br>
+**A**. The key change is that CA Mobile SDK 1.9.20 introduces new error handling that handles the Null object for the ASN.1 Bit String Tag. On iOS 13, the ASN.1 decoder has an empty sub content for ASN.1 Bit String Tag. This causes a Null Pointer exception and crashes the Mobile app.</br>      
+In order to make your app compatible with the latest iOS version, you will be required to upgrade to CA Mobile SDK 1.9.20
+For details, see:
+- [Prepare for iOS 13 - iOS native](http://mas.ca.com/docs/ios/1.9.00/guides/#prepare-for-ios-13)
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2                   | 4.3, 4.2                        | 9.4, 9.3       | 1.9, 1.8, 1.7, 1.6                   |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 1.9, 1.8, 1.7, 1.6                   |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 1.9. 1.8, 1.7, 1.6, 1.3              |
+| 3.2                   | 3.5                             | 9.1            | 1.9, 1.8, 1.7, 1.6, 1.2              |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | 9.0 through 13.0                |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| F88484 : iOS13 Apple Login support | On iOS 13, Apple is introducing sign in with Apple, this feature is not supported on the current version of Mobile API Gateway | Will be considered in the future release                                    |
+| Xamarin iOS13 support | Current version of SDK doesn’t support iOS13 on Xamarin  | Will be considered in the future release                                    |
+
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+
 ## Release 1.9.00
 
 <br>**Released**: December 13, 2018</br>
