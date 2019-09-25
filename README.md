@@ -1,6 +1,118 @@
 
 # Mobile SDK for CA Mobile API Gateway
 
+## Release 2.0.00
+
+<br>**Released**: October 3, 2019</br>
+
+### Features and Enhancements
+
+#### iOS 13 Support
+We understand that Apple is expecting to announce the official release of iOS 13 in September, 2019. During the past few months, our team has been working with Apple’s beta releases, assessing the impact to our CA Mobile SDK for iOS, as well as the impact to dependent hybrid platforms: Xamarin® and Cordova™. Unfortunately, we have identified that the new version of iOS will cause core functionality from our SDK to stop working as expected. This means that users who update their device to iOS 13 will encounter problems with mobile apps built using CA Mobile SDK 1.9.10 and older
+We made substantive changes to our Mobile SDK for iOS 13, and we sent out advanced customer notification, so you could prepare for these changes.</br>
+##### The Mobile SDK 2.0.00 supports iOS 13 for:
+- iOS native
+- Xamarin
+- Cordova iOS
+
+##### Mobile SDK Changes for iOS 13
+Whether you have an existing Mobile SDK app, or this is your first app, review this section to ensure success with iOS 13 devices. Although the changes to iOS 13 were substantial, the changes you need to make are minimal.</br>
+**Q. What change did you make to the Mobile SDK for iOS 13?** </br>
+**A**. The key change is that CA Mobile SDK 2.0.00 introduces new error handling that handles the Null object for the ASN.1 Bit String Tag. On iOS 13, the ASN.1 decoder has an empty sub content for ASN.1 Bit String Tag. This causes a Null Pointer exception and crashes the Mobile app. </br>
+**Q. What version of SDK and function are impacted by the error with iOS 13?** </br>
+**A**. The crash happens during device registration when handling the certificate parsing. This problem doesn’t impact SDK 1.7 and older because a different library was used for certificate parsing. However, we are not running full qualification test on older versions of SDK with later versions of iOS, thus we are not officially adding any new iOS versions to SDK 1.7 platform support chart. </br>      
+In order to make your app compatible with the latest iOS version, you will be required to upgrade to CA Mobile SDK 2.0.00
+For details, see:
+- [Prepare for iOS 13 - iOS Native](http://mas.ca.com/docs/ios/latest/guides/#prepare-for-ios-13)
+- [Prepare for iOS 13 - iOS Cordova](http://mas.ca.com/docs/cordova/latest/guides/#prepare-for-ios-13)
+- [Prepare for iOS 13 - iOS Xamarin](http://mas.ca.com/docs/xamarin/latest/guides/ios/#prepare-for-ios-13)
+
+#### Android 10 Support
+Layer7 Mobile SDK 2.0.00 is compatible with Android 10 updates. The upgrade would not have any functional impact to the applications using the Layer7 Mobile SDK.
+
+#### Simplified Certificate Renewal - iOS
+With Layer7 Mobile SDK 2.0.00 release we have enhanced the user experience (along with the security) by introducing the capability to enable certificate pinning at the Intermediate level. This would enable developers and administrators to have the freedom to renew/rotate the Leaf certificates without forcing the application to be updated. So even if the Leaf Certificate expires, SSL pinning would work as long as Intermediate certificate is valid.
+Layer7 Mobile SDK (iOS) enhanced the existing MASSecurityConfiguration Object to have the capability to set the Pinning Mode. Developers can choose to set the Pinning Mode as per their Security requirement. Default behaviour remains unchanged from previous releases.
+For details see: [Enable SSL Intermediate Certificate Pinning](http://mas.ca.com/docs/ios/latest/guides/#enable-ssl-intermediate-certificate-pinning)
+#### Secure File Upload via Multipart Form
+Layer7 Mobile SDK 2.0.00 now provides a public API which can be used to upload one or many files to a backed service routed via Layer7 API Gateway. The SDK API is secured via OAuth protocol and allows only Verified Devices (registered to MAG) to perform the upload action.
+The API provides a real-time File Upload Progress Feedback to the application, which the application can use to show the Progress to the user.
+For details see :
+- [Secure File Upload - iOS](http://mas.ca.com/docs/ios/latest/guides/#send-http-file-requests-to-apis)
+- [Secure File Upload - Android](http://mas.ca.com/docs/android/latest/guides/#send-http-file-requests-to-apis)
+- [Secure File Upload - Cordova](http://mas.ca.com/docs/cordova/latest/guides/#send-http-file-requests-to-apis)
+- [Secure File Upload - Xamarin-iOS](http://mas.ca.com/docs/xamarin/latest/guides/ios/#send-http-file-requests-to-apis)
+- [Secure File Upload - Xamarin-Android](http://mas.ca.com/docs/xamarin/latest/guides/android/#send-http-file-requests-to-apis)
+
+#### Configurable Timeout for HTTP(s) operations - iOS
+Layer7 Mobile SDK 2.0.00 has enhanced capability which allows developers to set Timeout values at Global and at individual CRUD operation level.
+This capability will enable long running tasks to not timeout due to network latency or other operation specific delays.
+For details see:
+- [API specific Timeout Settings](http://mas.ca.com/docs/ios/latest/guides/#build-request-with-masrequestbuilder-and-masrequest)
+- [Global Timeout Settings](http://mas.ca.com/docs/ios/latest/guides/#override-a-global-network-timeout-interval)
+
+#### Decoupling of MAS Proximity Framework - iOS
+As Apple recently started enforcing to have privacy consent in application's info.plist for all the apps that have API reference in their code regardless whether the application is actually calling the API or not, our customer started experiencing app rejection through App Store because of our BLE code in MASFoundation.
+So we decided to Decouple the Proximity Framework (which hosts QRCode, BLE based login) out of the MAS Foundation Framework, such that our customers can opt-in only when they want to do Proximity Login.
+Now Developers have to include MASProximity Framework separately while developing their application.
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2                   | 4.3, 4.2                        | 9.4, 9.3       | 2.0, 1.9, 1.8, 1.7, 1.6                   |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 2.0, 1.9, 1.8, 1.7, 1.6                   |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 2.0 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 2.0, 1.9. 1.8, 1.7, 1.6, 1.3              |
+| 3.2                   | 3.5                             | 9.1            | 2.0, 1.9, 1.8, 1.7, 1.6, 1.2              |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 13.0</li>                |
+| Android  | <li>4.4.2 through 10</li>                 |
+| Cordova  | <li>7.0.1 through 9.0.0 </li>         |
+| Xamarin  | <li>(iOS) 9.0 through 13.0</li><li>(Android) 4.4.2 through 10</li> |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| F88484 : iOS13 Apple Login support | On iOS 13, Apple is introducing sign in with Apple, this feature is not supported on the current version of Mobile API Gateway | Will be considered in the future release|
+
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASConnecta: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Connecta/blob/master/CHANGELOG.md)
+- MASIdentityManagement: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-IdentityManagement/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+- MASProximity: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Proximity/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+**Cordova**
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-IdentityManagement: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-IdentityManagement/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
+
 ## Release 1.9.20
 
 <br>**Released**: September 18, 2019</br>
@@ -541,7 +653,8 @@ The following versions are supported in Mobile SDK 1.6.00 (plus minor releases):
 
 ## License
 
-Copyright (c) 2016 CA. All rights reserved.
+Copyright (c) 2019 Broadcom. All Rights Reserved.
+The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 This software may be modified and distributed under the terms
 of the MIT license. See the [LICENSE][license-link] file for details.
