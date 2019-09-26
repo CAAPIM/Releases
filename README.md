@@ -8,7 +8,7 @@
 ### Features and Enhancements
 
 #### iOS 13 Support
-Please see the release notes of [1.9.20](#Release-1.9.20) for details on iOS13 support.
+Please see the release notes of [1.9.20](#release-1920) for details on iOS13 support.
 ##### The Mobile SDK 2.0.00 supports iOS 13 for:
 - iOS native
 - Xamarin
