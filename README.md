@@ -63,7 +63,7 @@ Now Developers have to include MASProximity Framework separately while developin
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br> 
 
 ### SDK Platform Support
 
@@ -143,7 +143,7 @@ For details, see:
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br> 
 
 ### SDK Platform Support
 
@@ -230,7 +230,7 @@ The Mobile SDK for Android is now compatible with ProGuard, the open source tool
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
@@ -342,7 +342,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
 
 **Note**: All minor versions (CRs) are supported as part of the major release.
-<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
@@ -483,7 +483,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
 
 **Note**: All minor versions (CRs) are supported as part of the major release.
-<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
