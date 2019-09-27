@@ -8,11 +8,14 @@
 ### Features and Enhancements
 
 #### iOS 13 Support
-Please see the release notes of [1.9.20](#release-1920) for details on iOS13 support.
-##### The Mobile SDK 2.0.00 supports iOS 13 for:
+Add iOS13 support for Cordova and Xamarin. Please see the release notes of [1.9.20](#release-1920) for details of the changes made to support iOS13.
+
+##### The Layer7 Mobile SDK 2.0.00 supports iOS 13 for:
 - iOS native
 - Xamarin
 - Cordova iOS
+
+In order to make your app compatible with the latest iOS version, you will be required to upgrade to iOS13 compatible SDK versions. in summary, they are Layer7 Mobile SDK 2.0.00 for Cordova and Xamarin, and SDK 2.0.00 or SDK 1.9.20 for iOS.
 
 For details, see:
 - [Prepare for iOS 13 - iOS Native](http://mas.ca.com/docs/ios/latest/guides/#prepare-for-ios-13)
