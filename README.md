@@ -8,11 +8,14 @@
 ### Features and Enhancements
 
 #### iOS 13 Support
-Please see the release notes of [1.9.20](#release-1920) for details on iOS13 support.
-##### The Mobile SDK 2.0.00 supports iOS 13 for:
+Add iOS13 support for Cordova and Xamarin. Please see the release notes of [1.9.20](#release-1920) for details of the changes made to support iOS13.
+
+##### The Layer7 Mobile SDK 2.0.00 supports iOS 13 for:
 - iOS native
 - Xamarin
 - Cordova iOS
+
+In order to make your app compatible with the latest iOS version, you will be required to upgrade to iOS13 compatible SDK versions. in summary, they are Layer7 Mobile SDK 2.0.00 for Cordova and Xamarin, and SDK 2.0.00 or SDK 1.9.20 for iOS.
 
 For details, see:
 - [Prepare for iOS 13 - iOS Native](http://mas.ca.com/docs/ios/latest/guides/#prepare-for-ios-13)
@@ -48,6 +51,9 @@ As Apple recently started enforcing to have privacy consent in application's inf
 So we decided to Decouple the Proximity Framework (which hosts QRCode, BLE based login) out of the MAS Foundation Framework, such that our customers can opt-in only when they want to do Proximity Login.
 Now Developers have to include MASProximity Framework separately while developing their application.
 
+#### Samsung SDS Nexsign Integration deprecation
+CA Mobile API Gateway and Samsung SDS Nexsign Integration is deprecated.
+
 ### Product Compatibility
 
 | CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
@@ -63,7 +69,7 @@ Now Developers have to include MASProximity Framework separately while developin
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br> 
 
 ### SDK Platform Support
 
@@ -143,7 +149,7 @@ For details, see:
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br> 
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br> 
 
 ### SDK Platform Support
 
@@ -230,7 +236,7 @@ The Mobile SDK for Android is now compatible with ProGuard, the open source tool
 
 **Note**: All minor versions (CRs) are supported as part of the major release.<br>
 
-**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
@@ -342,7 +348,7 @@ The Mobile SDK for iOS improves performance during the initial device registrati
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
 
 **Note**: All minor versions (CRs) are supported as part of the major release.
-<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
@@ -483,7 +489,7 @@ As of 1.6.00, all sample apps have moved to their respective repositories:
 <br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
 
 **Note**: All minor versions (CRs) are supported as part of the major release.
-<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://www.ca.com/us/developers/mas/support.html?id=4).</br>
+<br>**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://docops.ca.com/ca-mobile-api-gateway/4-1/en/release-notes/release-comparison), or contact [Developer Support](https://community.broadcom.com/home).</br>
 
 ### SDK Platform Support
 
