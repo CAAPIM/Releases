@@ -1,5 +1,5 @@
 
-# Mobile SDK for CA Mobile API Gateway
+# Mobile SDK for Layer7 Mobile API Gateway
 
 ## Release 2.0.00
 
