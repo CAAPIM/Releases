@@ -51,8 +51,8 @@ As Apple recently started enforcing to have privacy consent in application's inf
 So we decided to Decouple the Proximity Framework (which hosts QRCode, BLE based login) out of the MAS Foundation Framework, such that our customers can opt-in only when they want to do Proximity Login.
 Now Developers have to include MASProximity Framework separately while developing their application.
 
-#### Samsung SDS Nexsign Integration deprecation
-CA Mobile API Gateway and Samsung SDS Nexsign Integration is deprecated.
+#### Samsung SDS Nexsign Integration Removal
+CA Mobile API Gateway and Samsung SDS Nexsign Integration is not part of this release.
 
 ### Product Compatibility
 
