@@ -26,6 +26,10 @@ For details, see:
 Layer7 Mobile SDK 2.0.00 is compatible with Android 10 updates. The upgrade would not have any functional impact to the applications using the Layer7 Mobile SDK.
 
 #### Simplified Certificate Renewal - iOS
+
+**Note**: Starting SDK 2.0.00, SSL pinning has become more stricter in that the SDK validates the entire chain of Certificates starting from Leaf and up to the root. SDK expects the chain of certificates to be present in the msso_config.json file.<br>
+For details see : [Prepare for SSL Pinning Updates](http://mas.ca.com/docs/ios/latest/guides/#prepare-for-ssl-pinning-updates.)
+
 With Layer7 Mobile SDK 2.0.00 release we have enhanced the user experience (along with the security) by introducing the capability to enable certificate pinning at the Intermediate level. This would enable developers and administrators to have the freedom to renew/rotate the Leaf certificates without forcing the application to be updated. So even if the Leaf Certificate expires, SSL pinning would work as long as Intermediate certificate is valid.
 Layer7 Mobile SDK (iOS) enhanced the existing MASSecurityConfiguration Object to have the capability to set the Pinning Mode. Developers can choose to set the Pinning Mode as per their Security requirement. Default behaviour remains unchanged from previous releases.
 For details see: [Enable SSL Intermediate Certificate Pinning](http://mas.ca.com/docs/ios/latest/guides/#enable-ssl-intermediate-certificate-pinning)
