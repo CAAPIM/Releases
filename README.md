@@ -18,6 +18,7 @@ Layer7 Mobile SDK 2.1.00 now provides support for AndroidX. This replaces the de
 
 #### iOS - UIWebView migration to WKWebView
 Starting April'20 Apple won't allow any apps using UIWebView, hence Layer7 Mobile SDK for iOS migrated all the reference and usages of UIWebView with WKWebView without affecting the functionality of any of the dependent features.
+In Layer7 Mobile SDK, UIWebView was refernenced as part of the Enterprise Browser functionality, hence it is mandatory for all the applications integrated with Enterprise Browser functionality to use Layer7 Mobile SDK 2.1.00.
 
 #### Removal of Frameworks
 Starting Layer7 Mobile SDK 2.1.00, below frameworks are not supported by Broadcom.
