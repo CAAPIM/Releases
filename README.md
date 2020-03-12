@@ -1,6 +1,87 @@
 
 # Mobile SDK for Layer7 Mobile API Gateway
 
+## Release 2.1.00
+
+<br>**Released**: March 12, 2020</br>
+
+### Features and Enhancements
+
+#### Doze Mode Support - Android
+Enhanced ability of the Layer7 Mobile SDK for Android to work seamlessly in the Doze Mode (battery saving state).Mobile SDK now allows the background tasks to continue and upload mission critical data even in the Doze mode. Use cases which are benefitted by this capability is patient hearbeat data regular uploaded to backend systems. 
+
+#### Cancel request capability - iOS
+Layer7 Mobile SDK for iOS now allows the developers to cancel any one or all the requests which are in progress. This feature helps in aligning the capabilty with the Layer7 Mobile SDK for Android. To know more about the feature please see [Cancel API](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-1/iOS/IOS_2-1/Access-APIs/cancel-http-requests.html)
+
+#### Migration to AndroidX
+Layer7 Mobile SDK 2.1.00 now provides support for AndroidX. This replaces the dependency over the deprecated Android support libraries. Consumers of the Mobile SDK, must upgrade their applications to AndroidX.
+
+#### iOS - UIWebView migration to WKWebView
+Starting April'20 Apple won't allow any apps using UIWebView, hence Layer7 Mobile SDK for iOS migrated all the reference and usages of UIWebView with WKWebView without affecting the functionality of any of the dependent features.
+In Layer7 Mobile SDK, UIWebView was refernenced as part of the Enterprise Browser functionality, hence it is mandatory for all the applications integrated with Enterprise Browser functionality to use Layer7 Mobile SDK 2.1.00.
+
+#### Removal of Frameworks
+Starting Layer7 Mobile SDK 2.1.00, below frameworks are not supported by Broadcom.
+- Identity Management
+- User to User Messaging
+- Cloud Storage
+
+**Note**: iOS MASConnecta Framework would be removed since it only catered to User-2-User Messaging. Pub/Sub capability is served using MASFoundation Framework
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2                   | 4.4, 4.3, 4.2                      | 10.0, 9.4, 9.3       | 2.1, 2.0, 1.9, 1.8, 1.7                   |
+| 4.1                   | 4.3, 4.2                        | 9.3            | 2.0, 1.9, 1.8, 1.7, 1.6                   |
+| 4.0                   | 4.1`*`, 4.0                     | 9.2            | 2.0 1.9, 1.8, 1.7, 1.6, 1.5, 1.4         |
+| 3.3                   | 3.6                             | 9.2, 9.1`**`   | 2.0, 1.9. 1.8, 1.7, 1.6, 1.3              |
+| 3.2                   | 3.5                             | 9.1            | 2.0, 1.9, 1.8, 1.7, 1.6, 1.2              |
+
+`*` Requires software compatibility patch. See [OTK 4.1 Release Notes](https://docops.ca.com/display/OTK41/Release+Notes).
+<br>`**` Cassandra 3.x is not support in CA API Gateway version 9.1.x.</br>
+
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-0/CA-Mobile-API-Gateway-(MAG).html), or contact [Developer Support](https://community.broadcom.com/home).</br> 
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>9.0 through 13.0</li>                |
+| Android  | <li>4.4.2 through 10</li>                 |
+| Cordova  | <li>7.0.1 through 9.0.0 </li>         |
+| Xamarin  | <li>(iOS) 9.0 through 13.0</li><li>(Android) 4.4.2 through 10</li> |
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| F88484 : iOS13 Apple Login support | On iOS 13, Apple is introducing sign in with Apple, this feature is not supported on the current version of Mobile API Gateway | Will be considered in the future release|
+
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+- MASProximity: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Proximity/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
+**Cordova**
+- Cordova-MAS-Foundation: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Foundation/blob/master/ChangeLog.md)
+- Cordova-MAS-Connecta: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Connecta/blob/master/ChangeLog.md)
+- Cordova-MAS-Storage: [ChangeLog](https://github.com/CAAPIM/Cordova-MAS-Storage/blob/master/ChangeLog.md)
+
+**Xamarin**
+- [Xamarin ChangeLog](https://github.com/CAAPIM/Xamarin-MAS-Foundation/blob/master/CHANGELOG.md)
+
 ## Release 2.0.00
 
 <br>**Released**: October 3, 2019</br>
