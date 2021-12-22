@@ -44,7 +44,7 @@ For devices running on Android 9 and previous versions, TLS 1.3 is not supported
 | iOS      | <li>14.0 through 15.0</li>               |
 | Android  | <li>10 through 12</li>                   |
 
-**Note**: Cordova and Xamarin support for CA Mobile API Gateway SDK is being deprecated. Version 2.1 of the SDK is the last version for Xamarin and Cordova support. For more information, see this announcement.
+**Note**: Cordova and Xamarin support for CA Mobile API Gateway SDK is being deprecated. Version 2.1 of the SDK is the last version for Xamarin and Cordova support. For more information, see this [announcement](https://support.broadcom.com/external/content/release-announcements/EOS-for-selected-versions-of-Layer7-Mobile-API-Gateway-SDK-and-Deprecation-of-Cordova-and-Xamarin-Support/18872). </br>
 
 **Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
 
