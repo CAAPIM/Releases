@@ -3,7 +3,7 @@
 
 ## Release 2.2.00
 
-<br>**Released**: December 22, 2021</br>
+<br>**Released**: December 24, 2021</br>
 
 ### Features and Enhancements
 
