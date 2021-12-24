@@ -1,6 +1,71 @@
 
 # Mobile SDK for Layer7 Mobile API Gateway
 
+## Release 2.2.00
+
+<br>**Released**: December 22, 2021</br>
+
+### Features and Enhancements
+
+#### Support for Browser-based Authentication After Third-Party App Authentication - iOS And Android
+MAG SDK now supports browser-based authentication even after being redirected to open a third-party app for external authentication.
+
+#### Support for ASWebAuthenticationSession for Authentication - iOS
+MAG SDK supports ASWebAuthenticationSession to authenticate a user through a web service. 
+We support Browser Based Authentication using the following system browsers in iOS:
+ASWebAuthenticationSession
+SFSafariViewController
+
+#### Support for Disabling SSL Pinning - iOS And Android
+You can now disable SSL pinning using SDK APIs.
+Set MAS setSSLPinningEnabled to NO to disable SSL pinning globally for entire SDK. By default, this value is set to YES.
+If you want to disable SSL pinning per host, set [[MASSecurityConfiguration alloc] initWithURL:{HOST URL}].allowSSLPinning. By default, this value is set to YES.
+
+#### Support for RSA-PSS and TLS 1.3 - Android
+API Gateway v10.0 CR3 supports TLS 1.3 and so MAG SDK now supports TLS 1.3 protocol and RSA-PSS on Android 10 and later versions. 
+For devices running on Android 9 and previous versions, TLS 1.3 is not supported and you need to enable both the versions, TLS 1.2 and TLS 1.3, on API Gateway.
+
+### Product Compatibility
+
+| CA Mobile API Gateway | CA API Management OAuth Toolkit | CA API Gateway | Mobile SDK for CA Mobile API Gateway |
+| --------------------- | ------------------------------- | -------------- | ------------------------------------ |
+| 4.2.1                 | 4.4.1                           | 10.1, 10.0, 9.4| 2.2, 2.1, 2.0                        |
+| 4.2                   | 4.4, 4.3.1                      | 10.1, 10.0, 9.4| 2.1, 2.0                             |
+| 4.2                   | 4.2                             | 10.0, 9.4      | 2.1, 2.0                             |
+
+**Note**: All minor versions (CRs) are supported as part of the major release.<br>
+
+**Note**: Some Mobile SDK features depend on a specific version of CA Mobile API Gateway. Check [MAG Feature Release Comparison](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-0/CA-Mobile-API-Gateway-(MAG).html), or contact [Developer Support](https://community.broadcom.com/home).</br> 
+
+### SDK Platform Support
+
+| Platform | Supported                                |
+| -------- | ---------------------------------------- |
+| iOS      | <li>14.0 through 15.0</li>               |
+| Android  | <li>10 through 12</li>                   |
+
+**Note**: Cordova and Xamarin support for CA Mobile API Gateway SDK is being deprecated. Version 2.1 of the SDK is the last version for Xamarin and Cordova support. For more information, see this [announcement](https://support.broadcom.com/external/content/release-announcements/EOS-for-selected-versions-of-Layer7-Mobile-API-Gateway-SDK-and-Deprecation-of-Cordova-and-Xamarin-Support/18872). </br>
+
+**Note**: Our Mobile SDK is tested only on devices using official platform versions. The SDK may behave in unexpected ways if users have devices with unsupported versions.</br>
+
+### Known Issues
+
+| Issue or Limitation                      | Description                              | Workaround                               |
+| :--------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| F88484 : iOS13 Apple Login support | On iOS 13, Apple is introducing sign in with Apple, this feature is not supported on the current version of Mobile API Gateway | Will be considered in the future release|
+
+
+### Changelogs
+
+**iOS**
+- MASFoundation: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Foundation/blob/master/CHANGELOG.md)
+- MASStorage: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Storage/blob/master/CHANGELOG.md)
+- MASUI: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-UI/blob/master/CHANGELOG.md)
+- MASProximity: [ChangeLog](https://github.com/CAAPIM/iOS-MAS-Proximity/blob/master/CHANGELOG.md)
+
+**Android**
+- [Android SDK ChangeLog](https://github.com/CAAPIM/Android-MAS-SDK/blob/master/ChangeLog.md)
+
 ## Release 2.1.00
 
 <br>**Released**: March 12, 2020</br>
